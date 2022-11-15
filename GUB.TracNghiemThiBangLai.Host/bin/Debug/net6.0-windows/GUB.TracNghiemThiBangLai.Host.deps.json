@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "GUB.TracNghiemThiBangLai.Host/1.0.0": {
+        "runtime": {
+          "GUB.TracNghiemThiBangLai.Host.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GUB.TracNghiemThiBangLai.Host/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

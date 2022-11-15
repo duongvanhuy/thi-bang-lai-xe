@@ -1,0 +1,12 @@
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Entities\bin\Debug\net6.0\GUB.TracNghiemThiBangLai.Entities.deps.json
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Entities\bin\Debug\net6.0\GUB.TracNghiemThiBangLai.Entities.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Entities\bin\Debug\net6.0\GUB.TracNghiemThiBangLai.Entities.pdb
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Entities\obj\Debug\net6.0\GUB.TracNghiemThiBangLai.Entities.csproj.AssemblyReference.cache
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Entities\obj\Debug\net6.0\GUB.TracNghiemThiBangLai.Entities.GeneratedMSBuildEditorConfig.editorconfig
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Entities\obj\Debug\net6.0\GUB.TracNghiemThiBangLai.Entities.AssemblyInfoInputs.cache
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Entities\obj\Debug\net6.0\GUB.TracNghiemThiBangLai.Entities.AssemblyInfo.cs
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Entities\obj\Debug\net6.0\GUB.TracNghiemThiBangLai.Entities.csproj.CoreCompileInputs.cache
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Entities\obj\Debug\net6.0\GUB.TracNghiemThiBangLai.Entities.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Entities\obj\Debug\net6.0\refint\GUB.TracNghiemThiBangLai.Entities.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Entities\obj\Debug\net6.0\GUB.TracNghiemThiBangLai.Entities.pdb
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Entities\obj\Debug\net6.0\ref\GUB.TracNghiemThiBangLai.Entities.dll
