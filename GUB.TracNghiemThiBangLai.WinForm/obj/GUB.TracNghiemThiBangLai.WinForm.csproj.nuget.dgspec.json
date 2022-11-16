@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.WinForm\\GUB.TracNghiemThiBangLai.WinForm.csproj": {}
+    "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.WinForm\\GUB.TracNghiemThiBangLai.WinForm.csproj": {}
   },
   "projects": {
-    "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.API\\GUB.TracNghiemThiBangLai.API.csproj": {
+    "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.API\\GUB.TracNghiemThiBangLai.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.API\\GUB.TracNghiemThiBangLai.API.csproj",
+        "projectUniqueName": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.API\\GUB.TracNghiemThiBangLai.API.csproj",
         "projectName": "GUB.TracNghiemThiBangLai.API",
-        "projectPath": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.API\\GUB.TracNghiemThiBangLai.API.csproj",
-        "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.API\\obj\\",
+        "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.API\\GUB.TracNghiemThiBangLai.API.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +32,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj": {
-                "projectPath": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj"
+              "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj": {
+                "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj"
               },
-              "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj": {
-                "projectPath": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj"
+              "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj": {
+                "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj"
               }
             }
           }
@@ -87,21 +91,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj": {
+    "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj",
+        "projectUniqueName": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj",
         "projectName": "GUB.TracNghiemThiBangLai.Entities",
-        "projectPath": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj",
-        "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\obj\\",
+        "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -142,21 +150,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj": {
+    "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj",
+        "projectUniqueName": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj",
         "projectName": "GUB.TracNghiemThiBangLai.Share",
-        "projectPath": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj",
-        "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\obj\\",
+        "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -170,8 +182,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj": {
-                "projectPath": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj"
+              "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj": {
+                "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj"
               }
             }
           }
@@ -219,21 +231,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.WinForm\\GUB.TracNghiemThiBangLai.WinForm.csproj": {
+    "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.WinForm\\GUB.TracNghiemThiBangLai.WinForm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.WinForm\\GUB.TracNghiemThiBangLai.WinForm.csproj",
+        "projectUniqueName": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.WinForm\\GUB.TracNghiemThiBangLai.WinForm.csproj",
         "projectName": "GUB.TracNghiemThiBangLai.WinForm",
-        "projectPath": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.WinForm\\GUB.TracNghiemThiBangLai.WinForm.csproj",
-        "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.WinForm\\obj\\",
+        "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.WinForm\\GUB.TracNghiemThiBangLai.WinForm.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.WinForm\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -247,11 +263,11 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.API\\GUB.TracNghiemThiBangLai.API.csproj": {
-                "projectPath": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.API\\GUB.TracNghiemThiBangLai.API.csproj"
+              "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.API\\GUB.TracNghiemThiBangLai.API.csproj": {
+                "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.API\\GUB.TracNghiemThiBangLai.API.csproj"
               },
-              "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj": {
-                "projectPath": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj"
+              "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj": {
+                "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj"
               }
             }
           }
@@ -292,21 +308,25 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj": {
+    "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj",
+        "projectUniqueName": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj",
         "projectName": "GUB.TracNghiThiBangLai.EntityFrameworkCore",
-        "projectPath": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj",
-        "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\obj\\",
+        "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -320,8 +340,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj": {
-                "projectPath": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj"
+              "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj": {
+                "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj"
               }
             }
           }
@@ -369,7 +389,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
