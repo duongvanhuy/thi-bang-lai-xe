@@ -15,4 +15,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GUB.TracNghiemThiBangLai.API\GUB.TracNghiemThiBangLai.API.csproj" />
+    <ProjectReference Include="..\GUB.TracNghiemThiBangLai.Share\GUB.TracNghiemThiBangLai.Share.csproj" />
+  </ItemGroup>
+
 </Project>

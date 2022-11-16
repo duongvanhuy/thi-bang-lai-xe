@@ -16,7 +16,7 @@ namespace GUB.TracNghiemThiBangLai.API.Controllers
             _context = context;
         }
         [HttpGet]
-        public async Task<IActionResult> getAllQuestion()
+        public async Task<IActionResult> GetAllQuestion()
         {
             try
             {
@@ -29,7 +29,7 @@ namespace GUB.TracNghiemThiBangLai.API.Controllers
             }
         }
         [HttpGet]
-        public async Task<IActionResult> getByQuestion(int id)
+        public async Task<IActionResult> GetByQuestion(int id)
         {
             try
             {
@@ -42,7 +42,7 @@ namespace GUB.TracNghiemThiBangLai.API.Controllers
             }
         }
         [HttpPost]
-        public async Task<IActionResult> createQuestion(Question question)
+        public async Task<IActionResult> CreateQuestion(Question question)
         {
             try
             {
@@ -56,7 +56,7 @@ namespace GUB.TracNghiemThiBangLai.API.Controllers
             }
         }
         [HttpPut]
-        public async Task<IActionResult> updateQuestion(Question question)
+        public async Task<IActionResult> UpdateQuestion(Question question)
         {
             try
             {
@@ -70,7 +70,7 @@ namespace GUB.TracNghiemThiBangLai.API.Controllers
             }
         }
         [HttpDelete]
-        public async Task<IActionResult> deleteQuestion(int id)
+        public async Task<IActionResult> DeleteQuestion(int id)
         {
             try
             {

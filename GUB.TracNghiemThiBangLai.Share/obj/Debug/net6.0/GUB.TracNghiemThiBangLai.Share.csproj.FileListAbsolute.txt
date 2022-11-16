@@ -10,3 +10,6 @@ E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Share\obj\De
 E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Share\obj\Debug\net6.0\refint\GUB.TracNghiemThiBangLai.Share.dll
 E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Share\obj\Debug\net6.0\GUB.TracNghiemThiBangLai.Share.pdb
 E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Share\obj\Debug\net6.0\ref\GUB.TracNghiemThiBangLai.Share.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Share\bin\Debug\net6.0\GUB.TracNghiemThiBangLai.Entities.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Share\bin\Debug\net6.0\GUB.TracNghiemThiBangLai.Entities.pdb
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Share\obj\Debug\net6.0\GUB.TracNghiemThiBangLai.Share.csproj.CopyComplete
