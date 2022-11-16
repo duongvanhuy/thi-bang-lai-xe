@@ -1,3 +1,4 @@
+using GUB.TracNghiemThiBangLai.API.Mapper;
 using GUB.TracNghiThiBangLai.EntityFrameworkCore.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,10 +14,10 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
 builder.Services.AddDbContext<GUBDBContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("GUBTracNghiemLaiXe")));
 
+builder.Services.AddAutoMapper(typeof(AccountProfile));
 
 var app = builder.Build();
 

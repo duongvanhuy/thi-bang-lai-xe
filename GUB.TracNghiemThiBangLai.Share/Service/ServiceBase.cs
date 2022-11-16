@@ -39,7 +39,7 @@ namespace GUB.TracNghiemThiBangLai.Share.Service
                 }*/
                 var response = await client.ExecuteAsync<T>(request);
 
-                var dataReponse = JsonConvert.DeserializeObject<T>(response.Content);
+              /*  var dataReponse = JsonConvert.DeserializeObject<T>(response.Content);*/
 
                 return response.Data;
             }
@@ -82,8 +82,8 @@ namespace GUB.TracNghiemThiBangLai.Share.Service
                 var properties = from p in obj.GetType().GetProperties()
                                  where p.GetValue(obj, null) != null
                                  select p.Name + "=" + HttpUtility.UrlEncode(p.GetValue(obj, null).ToString());
-
-                return "?" + String.Join("&", properties.ToArray());
+                var data = "?" + String.Join("&", properties.ToArray());
+                return data;
             }
             return null;
 

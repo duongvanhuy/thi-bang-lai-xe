@@ -71,3 +71,5 @@ E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\bin\
 E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\bin\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Share.pdb
 E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\bin\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Entities.pdb
 E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\bin\Debug\net6.0-windows\GUB.TracNghiThiBangLai.EntityFrameworkCore.pdb
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\bin\Debug\net6.0-windows\AutoMapper.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\bin\Debug\net6.0-windows\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
