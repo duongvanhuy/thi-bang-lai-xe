@@ -8,14 +8,19 @@ namespace GUB.TracNghiemThiBangLai.WinForm
 {
     public partial class Form1 : Form
     {
-        QuestionRepository qs = new QuestionRepository();
-       
+      //  QuestionRepository qs = new QuestionRepository();
+     //   AccountRepository ac = new AccountRepository();
+
         public Form1()
         {
             InitializeComponent();
            
-            var data = qs.GetQuestions();
-
+          //  var data = qs.GetByQuestion(22);
+           /* var login = ac.Register(new Account()
+            {
+                UserName = "long",
+                Password = "jBfX9Cf"
+            });*/
 
         }
 

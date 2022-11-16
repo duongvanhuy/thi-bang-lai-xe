@@ -64,6 +64,7 @@ E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.API\obj\Debu
 E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.API\obj\Debug\net6.0\ref\GUB.TracNghiemThiBangLai.API.dll
 E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.API\bin\Debug\net6.0\Humanizer.dll
 E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+<<<<<<< HEAD
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.API\bin\Debug\net6.0\appsettings.Development.json
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.API\bin\Debug\net6.0\appsettings.json
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.API\bin\Debug\net6.0\GUB.TracNghiemThiBangLai.API.exe
@@ -130,3 +131,7 @@ D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBan
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.API\obj\Debug\net6.0\GUB.TracNghiemThiBangLai.API.pdb
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.API\obj\Debug\net6.0\GUB.TracNghiemThiBangLai.API.genruntimeconfig.cache
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.API\obj\Debug\net6.0\ref\GUB.TracNghiemThiBangLai.API.dll
+=======
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.API\bin\Debug\net6.0\AutoMapper.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+>>>>>>> 4802a43596655db08ec5a8c462f1587e54a6e4f4

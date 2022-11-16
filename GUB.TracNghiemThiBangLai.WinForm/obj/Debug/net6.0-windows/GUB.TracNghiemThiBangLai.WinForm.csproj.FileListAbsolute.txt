@@ -71,6 +71,7 @@ E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\bin\
 E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\bin\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Share.pdb
 E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\bin\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Entities.pdb
 E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\bin\Debug\net6.0-windows\GUB.TracNghiThiBangLai.EntityFrameworkCore.pdb
+<<<<<<< HEAD
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\bin\Debug\net6.0-windows\appsettings.Development.json
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\bin\Debug\net6.0-windows\appsettings.json
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\bin\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.API.deps.json
@@ -146,3 +147,7 @@ D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBan
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Debug\net6.0-windows\ref\GUB.TracNghiemThiBangLai.WinForm.dll
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.WinForm.ExamForm.resources
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.WinForm.Properties.Resources.resources
+=======
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\bin\Debug\net6.0-windows\AutoMapper.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\bin\Debug\net6.0-windows\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+>>>>>>> 4802a43596655db08ec5a8c462f1587e54a6e4f4

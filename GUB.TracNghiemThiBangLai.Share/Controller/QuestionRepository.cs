@@ -21,5 +21,13 @@ namespace GUB.TracNghiemThiBangLai.Share.Controller
             data = await _service.CallAPIGet<List<Question>>("Question/GetAllQuestion", null);
             return data;
         }
+
+        public async Task<Question> GetByQuestion(int id)
+        {
+            var idObject = new { id = id };
+            var data = new Question();
+            data = await _service.CallAPIGet<Question>("Question/GetByQuestion", idObject);
+            return data;
+        }
     }
 }

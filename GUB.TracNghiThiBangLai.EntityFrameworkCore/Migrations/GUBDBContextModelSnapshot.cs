@@ -151,6 +151,32 @@ namespace GUB.TracNghiThiBangLai.EntityFrameworkCore.Migrations
                     b.ToTable("Questions");
                 });
 
+            modelBuilder.Entity("GUB.TracNghiemThiBangLai.Entities.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Type")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
+                });
+
             modelBuilder.Entity("GUB.TracNghiemThiBangLai.Entities.User", b =>
                 {
                     b.Property<int>("Id")
