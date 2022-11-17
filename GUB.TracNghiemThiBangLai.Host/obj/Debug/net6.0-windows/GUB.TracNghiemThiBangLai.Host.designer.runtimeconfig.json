@@ -12,12 +12,19 @@
       }
     ],
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\ADMIN\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\ADMIN\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,
+=======
+      "C:\\Users\\dell\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\dell\\.nuget\\packages"
+    ],
+    "configProperties": {
+>>>>>>> 3f936890f61ff1fa98bf0791e0eab5b8a92176d1
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
     }
   }

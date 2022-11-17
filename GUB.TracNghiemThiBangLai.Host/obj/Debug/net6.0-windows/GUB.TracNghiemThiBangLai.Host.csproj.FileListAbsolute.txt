@@ -1,3 +1,38 @@
+<<<<<<< HEAD
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.exe
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.deps.json
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.runtimeconfig.json
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.pdb
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Http.Abstractions.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Http.Extensions.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Http.Features.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\Microsoft.Net.Http.Headers.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\RestSharp.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Entities.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Share.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Entities.pdb
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Share.pdb
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.csproj.AssemblyReference.cache
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.Form1.resources
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.HomeForm.resources
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.HostForm.resources
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.LoginForm.resources
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.csproj.GenerateResource.cache
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.GeneratedMSBuildEditorConfig.editorconfig
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.AssemblyInfoInputs.cache
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.AssemblyInfo.cs
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.csproj.CoreCompileInputs.cache
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.csproj.CopyComplete
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\refint\GUB.TracNghiemThiBangLai.Host.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.pdb
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.genruntimeconfig.cache
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\ref\GUB.TracNghiemThiBangLai.Host.dll
+=======
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.exe
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.deps.json
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.runtimeconfig.json
@@ -40,3 +75,4 @@ D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBan
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.pdb
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.genruntimeconfig.cache
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\ref\GUB.TracNghiemThiBangLai.Host.dll
+>>>>>>> b00f1fa8cb58a6a1bb07c57e2936b11a16f91ea5
