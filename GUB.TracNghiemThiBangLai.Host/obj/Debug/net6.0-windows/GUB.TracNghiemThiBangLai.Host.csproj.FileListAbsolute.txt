@@ -76,3 +76,12 @@ D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBan
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.genruntimeconfig.cache
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\ref\GUB.TracNghiemThiBangLai.Host.dll
 >>>>>>> b00f1fa8cb58a6a1bb07c57e2936b11a16f91ea5
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
