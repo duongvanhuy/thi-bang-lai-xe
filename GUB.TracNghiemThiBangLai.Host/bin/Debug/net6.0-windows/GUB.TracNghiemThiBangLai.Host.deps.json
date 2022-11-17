@@ -8,11 +8,20 @@
     ".NETCoreApp,Version=v6.0": {
       "GUB.TracNghiemThiBangLai.Host/1.0.0": {
         "dependencies": {
+          "ExcelDataReader": "3.7.0-develop00310",
           "GUB.TracNghiemThiBangLai.Entities": "1.0.0",
           "GUB.TracNghiemThiBangLai.Share": "1.0.0"
         },
         "runtime": {
           "GUB.TracNghiemThiBangLai.Host.dll": {}
+        }
+      },
+      "ExcelDataReader/3.7.0-develop00310": {
+        "runtime": {
+          "lib/netstandard2.0/ExcelDataReader.dll": {
+            "assemblyVersion": "3.7.0.0",
+            "fileVersion": "3.7.0.0"
+          }
         }
       },
       "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
@@ -249,6 +258,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "ExcelDataReader/3.7.0-develop00310": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ox77cjWP8h1z0cH1VR/hsvGYHng/9o6uxaE/Ui14xphEUU1Ovluipcn7gJE5ZmXSBCzT2x6c2OTBwyMBk+ysDw==",
+      "path": "exceldatareader/3.7.0-develop00310",
+      "hashPath": "exceldatareader.3.7.0-develop00310.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
       "type": "package",
