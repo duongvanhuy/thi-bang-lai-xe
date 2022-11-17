@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xyKmDqrBpcR8eBRW1VDVSTgwnF0MWu+WzTWDeuoR6fsRB1YLv5dPHVSeBrlpnPhcupyyCOJt+ikf8dKuMSW9wQ==",
+  "dgSpecHash": "60YAXPBTm1TmcWR5a82O0MaydOHXdGcURCTc0+O2WEKp7omWzIIm9KSDRqXoOHAjycZCMWTV7V3FyI3QuYZpgQ==",
   "success": true,
   "projectFilePath": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Host\\GUB.TracNghiemThiBangLai.Host.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\dell\\.nuget\\packages\\exceldatareader\\3.7.0-develop00310\\exceldatareader.3.7.0-develop00310.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.2.0\\microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
@@ -28,12 +29,5 @@
     "C:\\Users\\dell\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Host\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
