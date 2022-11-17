@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3sNHf7Gf6ZZ/UVxWHX8KIOT5n499gDN1zU8bmdSSp7HkCnkzts/ra8DDu03HM4XBPzyk/fgUrwE9rxsb0qGYlg==",
+  "dgSpecHash": "MWMGgJ1LfslcZeeMvDsXMkz5ebmvvPkHQEcvn3kaBeGqA8MUYUellxm8XsWXlIhhNGfTbtbUK37CoSXSxKZT1A==",
   "success": true,
   "projectFilePath": "E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.WinForm\\GUB.TracNghiemThiBangLai.WinForm.csproj",
   "expectedPackageFiles": [
@@ -67,5 +67,12 @@
     "C:\\Users\\dell\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file E:\\MonHoc-PXU\\nam3\\winform\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.WinForm\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

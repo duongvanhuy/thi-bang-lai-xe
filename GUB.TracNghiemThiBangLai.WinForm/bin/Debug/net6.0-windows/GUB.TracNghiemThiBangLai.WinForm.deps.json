@@ -570,6 +570,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
           "GUB.TracNghiThiBangLai.EntityFrameworkCore": "1.0.0",
           "GUB.TracNghiemThiBangLai.Entities": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
@@ -578,6 +579,9 @@
         }
       },
       "GUB.TracNghiemThiBangLai.Entities/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.0"
+        },
         "runtime": {
           "GUB.TracNghiemThiBangLai.Entities.dll": {}
         }
@@ -597,6 +601,7 @@
       "GUB.TracNghiThiBangLai.EntityFrameworkCore/1.0.0": {
         "dependencies": {
           "GUB.TracNghiemThiBangLai.Entities": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10"
         },
         "runtime": {
