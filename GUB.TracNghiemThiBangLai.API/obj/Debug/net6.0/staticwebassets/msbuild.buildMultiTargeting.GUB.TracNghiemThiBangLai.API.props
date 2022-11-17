@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\GUB.TracNghiemThiBangLai.API.props" />
+</Project>
