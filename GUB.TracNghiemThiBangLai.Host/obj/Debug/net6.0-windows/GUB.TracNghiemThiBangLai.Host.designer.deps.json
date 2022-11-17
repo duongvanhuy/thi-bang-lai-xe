@@ -6,6 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
+<<<<<<< HEAD
       "ExcelDataReader/3.7.0-develop00310": {
         "runtime": {
           "lib/netstandard2.0/ExcelDataReader.dll": {
@@ -14,6 +15,8 @@
           }
         }
       },
+=======
+>>>>>>> 4e087c70007d29651880128a0b99c43a25a27514
       "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "2.2.0",
@@ -250,6 +253,7 @@
     }
   },
   "libraries": {
+<<<<<<< HEAD
     "ExcelDataReader/3.7.0-develop00310": {
       "type": "package",
       "serviceable": true,
@@ -257,6 +261,8 @@
       "path": "exceldatareader/3.7.0-develop00310",
       "hashPath": "exceldatareader.3.7.0-develop00310.nupkg.sha512"
     },
+=======
+>>>>>>> 4e087c70007d29651880128a0b99c43a25a27514
     "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
       "type": "package",
       "serviceable": true,
