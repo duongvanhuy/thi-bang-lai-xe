@@ -32,14 +32,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.ptbHinhAnhCauHoi = new System.Windows.Forms.PictureBox();
             this.lblCauTraLoi = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.lblCauHoi = new System.Windows.Forms.Label();
             this.flpDapAn = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -59,8 +54,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHinhAnhCauHoi)).BeginInit();
-            this.flpDapAn.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -76,20 +69,21 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.ptbHinhAnhCauHoi);
             this.panel1.Controls.Add(this.lblCauTraLoi);
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.lblCauHoi);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(835, 403);
+            this.panel1.Size = new System.Drawing.Size(822, 403);
             this.panel1.TabIndex = 0;
             // 
             // ptbHinhAnhCauHoi
             // 
             this.ptbHinhAnhCauHoi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ptbHinhAnhCauHoi.Image = ((System.Drawing.Image)(resources.GetObject("ptbHinhAnhCauHoi.Image")));
-            this.ptbHinhAnhCauHoi.Location = new System.Drawing.Point(0, 75);
+            this.ptbHinhAnhCauHoi.Location = new System.Drawing.Point(122, 75);
             this.ptbHinhAnhCauHoi.Name = "ptbHinhAnhCauHoi";
-            this.ptbHinhAnhCauHoi.Size = new System.Drawing.Size(831, 175);
+            this.ptbHinhAnhCauHoi.Size = new System.Drawing.Size(696, 22);
             this.ptbHinhAnhCauHoi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ptbHinhAnhCauHoi.TabIndex = 4;
             this.ptbHinhAnhCauHoi.TabStop = false;
@@ -97,12 +91,20 @@
             // lblCauTraLoi
             // 
             this.lblCauTraLoi.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblCauTraLoi.Location = new System.Drawing.Point(0, 250);
+            this.lblCauTraLoi.Location = new System.Drawing.Point(122, 97);
             this.lblCauTraLoi.Name = "lblCauTraLoi";
-            this.lblCauTraLoi.Size = new System.Drawing.Size(831, 149);
+            this.lblCauTraLoi.Size = new System.Drawing.Size(696, 302);
             this.lblCauTraLoi.TabIndex = 3;
             this.lblCauTraLoi.Text = resources.GetString("lblCauTraLoi.Text");
             this.lblCauTraLoi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel6
+            // 
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.Location = new System.Drawing.Point(0, 75);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(122, 324);
+            this.panel6.TabIndex = 5;
             // 
             // lblCauHoi
             // 
@@ -111,91 +113,20 @@
             this.lblCauHoi.ForeColor = System.Drawing.Color.Red;
             this.lblCauHoi.Location = new System.Drawing.Point(0, 0);
             this.lblCauHoi.Name = "lblCauHoi";
-            this.lblCauHoi.Size = new System.Drawing.Size(831, 75);
+            this.lblCauHoi.Size = new System.Drawing.Size(818, 75);
             this.lblCauHoi.TabIndex = 1;
             this.lblCauHoi.Text = "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?";
             this.lblCauHoi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flpDapAn
             // 
-            this.flpDapAn.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flpDapAn.Controls.Add(this.flowLayoutPanel3);
+            this.flpDapAn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flpDapAn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpDapAn.Location = new System.Drawing.Point(0, 0);
             this.flpDapAn.Name = "flpDapAn";
-            this.flpDapAn.Size = new System.Drawing.Size(297, 517);
+            this.flpDapAn.Size = new System.Drawing.Size(310, 517);
             this.flpDapAn.TabIndex = 2;
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.Controls.Add(this.label7);
-            this.flowLayoutPanel3.Controls.Add(this.radioButton1);
-            this.flowLayoutPanel3.Controls.Add(this.radioButton2);
-            this.flowLayoutPanel3.Controls.Add(this.radioButton3);
-            this.flowLayoutPanel3.Controls.Add(this.radioButton4);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(140, 48);
-            this.flowLayoutPanel3.TabIndex = 5;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Location = new System.Drawing.Point(3, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(25, 46);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "10";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.radioButton1.Location = new System.Drawing.Point(34, 3);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(21, 40);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "1";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.radioButton2.Location = new System.Drawing.Point(61, 3);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(21, 40);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "2";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.radioButton3.Location = new System.Drawing.Point(88, 3);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(21, 40);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "3";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.radioButton4.Location = new System.Drawing.Point(115, 3);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(21, 40);
-            this.radioButton4.TabIndex = 4;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "4";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.flpDapAn.Paint += new System.Windows.Forms.PaintEventHandler(this.flpDapAn_Paint);
             // 
             // panel2
             // 
@@ -205,7 +136,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 403);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(835, 150);
+            this.panel2.Size = new System.Drawing.Size(822, 150);
             this.panel2.TabIndex = 1;
             // 
             // panel5
@@ -215,7 +146,7 @@
             this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Controls.Add(this.label12);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(492, 0);
+            this.panel5.Location = new System.Drawing.Point(479, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(339, 146);
             this.panel5.TabIndex = 1;
@@ -252,7 +183,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(831, 146);
+            this.panel4.Size = new System.Drawing.Size(818, 146);
             this.panel4.TabIndex = 0;
             // 
             // panel7
@@ -269,7 +200,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(121, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(708, 144);
+            this.panel7.Size = new System.Drawing.Size(695, 144);
             this.panel7.TabIndex = 1;
             // 
             // lblCMND
@@ -359,7 +290,7 @@
             this.btnKetThuc.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnKetThuc.Location = new System.Drawing.Point(0, 517);
             this.btnKetThuc.Name = "btnKetThuc";
-            this.btnKetThuc.Size = new System.Drawing.Size(297, 36);
+            this.btnKetThuc.Size = new System.Drawing.Size(310, 36);
             this.btnKetThuc.TabIndex = 6;
             this.btnKetThuc.Text = "Kết Thúc";
             this.btnKetThuc.UseVisualStyleBackColor = true;
@@ -369,9 +300,9 @@
             this.panel3.Controls.Add(this.flpDapAn);
             this.panel3.Controls.Add(this.btnKetThuc);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(835, 0);
+            this.panel3.Location = new System.Drawing.Point(822, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(297, 553);
+            this.panel3.Size = new System.Drawing.Size(310, 553);
             this.panel3.TabIndex = 7;
             // 
             // ExamForm
@@ -384,11 +315,9 @@
             this.Controls.Add(this.panel3);
             this.Name = "ExamForm";
             this.Text = "ExamForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptbHinhAnhCauHoi)).EndInit();
-            this.flpDapAn.ResumeLayout(false);
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.flowLayoutPanel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -423,13 +352,8 @@
         private PictureBox ptbHinhAnhCauHoi;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private FlowLayoutPanel flowLayoutPanel3;
         private Button btnKetThuc;
         private Panel panel3;
-        private Label label7;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
-        private RadioButton radioButton3;
-        private RadioButton radioButton4;
+        private Panel panel6;
     }
 }
