@@ -786,6 +786,9 @@
       "GUB.TracNghiemThiBangLai.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.10"
+        },
         "compile": {
           "bin/placeholder/GUB.TracNghiemThiBangLai.Entities.dll": {}
         },
@@ -2023,6 +2026,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "GUB.TracNghiemThiBangLai.Entities >= 1.0.0",
+      "Microsoft.EntityFrameworkCore >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.10"
@@ -2076,6 +2080,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.10, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",

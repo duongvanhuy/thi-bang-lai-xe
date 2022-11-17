@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fzNVemGDxR455PVZAeHoErMldj2/AVMgQkqPR8iN04T+uP8sUh9RlA6FB8/TL9fgvqTEEYZqDw1oRqyVHwCfFA==",
+  "dgSpecHash": "NoDpivOKy0PHhw/d5YKgUV8f7m1puG23AIK5IYl7Jy4B0HU2gN3V7gEof6z2x/SnxsBcrf/GeMk2nSi+eJ7Vtw==",
   "success": true,
   "projectFilePath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.WinForm\\GUB.TracNghiemThiBangLai.WinForm.csproj",
   "expectedPackageFiles": [
@@ -67,12 +67,5 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.WinForm\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
