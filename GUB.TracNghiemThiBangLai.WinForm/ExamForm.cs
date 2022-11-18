@@ -30,7 +30,7 @@ namespace GUB.TracNghiemThiBangLai.WinForm
         {
             var listQuestion = await questionRepository.GetQuestions();
             addListFlpDapAn(listQuestion);
-            Question question = await questionRepository.GetByQuestion(2);
+            Question question = await questionRepository.GetByQuestion(22);
             renderQuestion(question);
 
         }
@@ -93,7 +93,7 @@ namespace GUB.TracNghiemThiBangLai.WinForm
         private void renderQuestion(Question question)
         {
             lblCauHoi.Text= question.Content;
-            //ptbHinhAnhCauHoi.Image = LoadImage(question.Image);
+            ptbHinhAnhCauHoi.Image = LoadImage(question.Image);
             
             lblCauTraLoi.Text= string.Format("1. {0} \n2. {1} \n3. {2} \n4. {3}", question.AnswerA, question.AnswerB, question.AnswerC, question.AnswerD);
         }
@@ -101,9 +101,10 @@ namespace GUB.TracNghiemThiBangLai.WinForm
         //Convert Base64 to Image 
         public Image LoadImage(string base64)
         {
+            var stringBase64 = base64.Split("data:image/png;base64,")[1];
             //data:image/gif;base64,
             //this image is a single pixel (black)
-            byte[] bytes = Convert.FromBase64String(base64);
+            byte[] bytes = Convert.FromBase64String(stringBase64);
 
             Image image;
             using (MemoryStream ms = new MemoryStream(bytes))
