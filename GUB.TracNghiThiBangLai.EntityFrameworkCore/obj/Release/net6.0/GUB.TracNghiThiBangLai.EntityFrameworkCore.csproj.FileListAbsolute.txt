@@ -1,0 +1,17 @@
+D:\Workspace\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\bin\Release\net6.0\GUB.TracNghiThiBangLai.EntityFrameworkCore.deps.json
+D:\Workspace\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\bin\Release\net6.0\GUB.TracNghiThiBangLai.EntityFrameworkCore.runtimeconfig.json
+D:\Workspace\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\bin\Release\net6.0\GUB.TracNghiThiBangLai.EntityFrameworkCore.dll
+D:\Workspace\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\bin\Release\net6.0\GUB.TracNghiThiBangLai.EntityFrameworkCore.pdb
+D:\Workspace\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\bin\Release\net6.0\GUB.TracNghiemThiBangLai.Entities.dll
+D:\Workspace\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\bin\Release\net6.0\GUB.TracNghiemThiBangLai.Entities.pdb
+D:\Workspace\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\obj\Release\net6.0\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj.AssemblyReference.cache
+D:\Workspace\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\obj\Release\net6.0\GUB.TracNghiThiBangLai.EntityFrameworkCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\obj\Release\net6.0\GUB.TracNghiThiBangLai.EntityFrameworkCore.AssemblyInfoInputs.cache
+D:\Workspace\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\obj\Release\net6.0\GUB.TracNghiThiBangLai.EntityFrameworkCore.AssemblyInfo.cs
+D:\Workspace\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\obj\Release\net6.0\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj.CoreCompileInputs.cache
+D:\Workspace\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\obj\Release\net6.0\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj.CopyComplete
+D:\Workspace\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\obj\Release\net6.0\GUB.TracNghiThiBangLai.EntityFrameworkCore.dll
+D:\Workspace\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\obj\Release\net6.0\refint\GUB.TracNghiThiBangLai.EntityFrameworkCore.dll
+D:\Workspace\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\obj\Release\net6.0\GUB.TracNghiThiBangLai.EntityFrameworkCore.pdb
+D:\Workspace\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\obj\Release\net6.0\GUB.TracNghiThiBangLai.EntityFrameworkCore.genruntimeconfig.cache
+D:\Workspace\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\obj\Release\net6.0\ref\GUB.TracNghiThiBangLai.EntityFrameworkCore.dll

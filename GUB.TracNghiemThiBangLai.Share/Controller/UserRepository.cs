@@ -52,5 +52,14 @@ namespace GUB.TracNghiemThiBangLai.Share.Controller
             data = await _service.CallAPIGet<User>("User/DeleteUser", idObject);
             return data;
         }
+
+        public async Task<List<User>> SearchUser(string name)
+        {
+            var data = new List<User>();
+            data = await _service.CallAPIGet<List<User>>("User/SearchUser", name);
+            return data;
+        }
+
+
     }
 }

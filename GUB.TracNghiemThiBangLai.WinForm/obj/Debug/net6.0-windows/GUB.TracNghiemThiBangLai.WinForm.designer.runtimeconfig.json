@@ -9,15 +9,15 @@
       {
         "name": "Microsoft.WindowsDesktop.App",
         "version": "6.0.0"
+      },
+      {
+        "name": "Microsoft.AspNetCore.App",
+        "version": "6.0.0"
       }
     ],
     "additionalProbingPaths": [
-<<<<<<< HEAD
       "C:\\Users\\LENOVO\\.dotnet\\store\\|arch|\\|tfm|",
-=======
-      "C:\\Users\\ADMIN\\.dotnet\\store\\|arch|\\|tfm|",
->>>>>>> 493b12128b5cabaddcd54f9e74c669674633ecc4
-      "C:\\Users\\dell\\.nuget\\packages"
+      "C:\\Users\\LENOVO\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,
