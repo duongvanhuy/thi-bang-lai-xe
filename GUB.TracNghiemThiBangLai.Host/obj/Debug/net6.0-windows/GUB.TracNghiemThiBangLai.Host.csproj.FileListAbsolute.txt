@@ -42,3 +42,5 @@ E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Deb
 E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\ref\GUB.TracNghiemThiBangLai.Host.dll
 E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.Host.Properties.Resources.resources
 E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\ExcelDataReader.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\System.Data.OleDb.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Data.OleDb.dll

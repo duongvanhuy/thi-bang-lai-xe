@@ -60,17 +60,17 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAALAAAACwARRqq2kAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAAB8UlEQVRIS62WT0sbURTFB7oVpFu/gku3XbqRyZg/GFGwoCCiopQupH6EKhH/oF+gC41ZJGOUbNTo
-        trWh6iI7qcu0yc7gTp73Xd6LZ+7EkIle+GHOmXvfZY6GpxOlhnPpfq+QGPH8+Kyx3lajR6MDbj6Zjvnx
-        7Vgh8Zt4IpTGtHRf6Vz6g1f0Bt1CYo4O+EE//9rD2uH68W8Weqt91JZYPjnvePnkKlGmoaY8pBM0890i
-        NfoODkXBvDiX1LbYx6EoBKIQGv2eF8goUKMfWrBxtaU8P/lyEH3euNoM9GhMClxS22IfhzQ3tVu1U9lr
-        6Z3KLnvYo5FRoEY/tGDxbFk1mg31uTSjpkrTqv7QUEvnXwI9GhkFavRDCzTZak6d35eZg+ph6LnGpMAl
-        tS32cciSKo6rfw//Vb1ZV2PFidBzjYwCNfodF+ioXlsgo0CNftsF+9WsKt9fEJf8uV2PSYFLalvs45Bm
-        4bS7X7KMAjX6oQXXtRvxZ7rHHvZoZBSo0Q8tWPuZCX3R1n9lAj0akwKX1LbYx6EoyChQo9/zAhkFavR7
-        XmBS4JLaFvs4FAUZBWr0HbrWVuh6PCTxh3jUZjcEo0gVUbfw41/Ny7yUe+J+pIef9N2sm+iwY+KOaF34
-        GtP+fkX/FPTR0iG64Cf5Mu+qHOcZdMzmM29sa1wAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        rgAAAK4B+ff3XQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHxSURBVEhLrZZP
+        SxtRFMUHuhWkW7+CS7ddupHJmD8YUbCgIKKilC6kfoQqEf+gX6ALjVkkY5Rs1Oi2taHqIjupy7TJzuBO
+        nvdd3otn7sSQiV74Yc6Ze99ljoanE6WGc+l+r5AY8fz4rLHeVqNHowNuPpmO+fHtWCHxm3gilMa0dF/p
+        XPqDV/QG3UJijg74QT//2sPa4frxbxZ6q33Ullg+Oe94+eQqUaahpjykEzTz3SI1+g4ORcG8OJfUttjH
+        oSgEohAa/Z4XyChQox9asHG1pTw/+XIQfd642gz0aEwKXFLbYh+HNDe1W7VT2Wvpncoue9ijkVGgRj+0
+        YPFsWTWaDfW5NKOmStOq/tBQS+dfAj0aGQVq9EMLNNlqTp3fl5mD6mHoucakwCW1LfZxyJIqjqt/D/9V
+        vVlXY8WJ0HONjAI1+h0X6KheWyCjQI1+2wX71awq318Ql/y5XY9JgUtqW+zjkGbhtLtfsowCNfqhBde1
+        G/Fnusce9mhkFKjRDy1Y+5kJfdHWf2UCPRqTApfUttjHoSjIKFCj3/MCGQVq9HteYFLgktoW+zgUBRkF
+        avQdutZW6Ho8JPGHeNRmNwSjSBVRt/DjX83LvJR74n6kh5/03ayb6LBj4o5oXfga0/5+Rf8U9NHSIbrg
+        J/ky76oc5xl0zOYzb2xrXAAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
