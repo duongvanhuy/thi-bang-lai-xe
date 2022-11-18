@@ -6,6 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 264d92cc51a467d366217e1441817ee43bcca0d3
       "ExcelDataReader/3.7.0-develop00310": {
         "runtime": {
           "lib/netstandard2.0/ExcelDataReader.dll": {
@@ -14,16 +20,25 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 4e087c70007d29651880128a0b99c43a25a27514
+>>>>>>> 493b12128b5cabaddcd54f9e74c669674633ecc4
+>>>>>>> 264d92cc51a467d366217e1441817ee43bcca0d3
       "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "2.2.0",
           "System.Text.Encodings.Web": "4.5.0"
+<<<<<<< HEAD
+=======
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+>>>>>>> 493b12128b5cabaddcd54f9e74c669674633ecc4
         }
       },
       "Microsoft.AspNetCore.Http.Extensions/2.2.0": {
@@ -32,23 +47,29 @@
           "Microsoft.Extensions.FileProviders.Abstractions": "2.2.0",
           "Microsoft.Net.Http.Headers": "2.2.0",
           "System.Buffers": "4.5.0"
+<<<<<<< HEAD
+=======
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Http.Extensions.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+>>>>>>> 493b12128b5cabaddcd54f9e74c669674633ecc4
         }
       },
       "Microsoft.AspNetCore.Http.Features/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "6.0.0"
+<<<<<<< HEAD
+=======
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18316"
           }
+>>>>>>> 493b12128b5cabaddcd54f9e74c669674633ecc4
         }
       },
       "Microsoft.EntityFrameworkCore/6.0.10": {
@@ -60,6 +81,11 @@
           "Microsoft.Extensions.Logging": "6.0.0",
           "System.Collections.Immutable": "6.0.0",
           "System.Diagnostics.DiagnosticSource": "6.0.0"
+<<<<<<< HEAD
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Abstractions/6.0.10": {},
+=======
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.dll": {
@@ -76,16 +102,20 @@
           }
         }
       },
+>>>>>>> 493b12128b5cabaddcd54f9e74c669674633ecc4
       "Microsoft.EntityFrameworkCore.Analyzers/6.0.10": {},
       "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "6.0.0"
+<<<<<<< HEAD
+=======
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
           }
+>>>>>>> 493b12128b5cabaddcd54f9e74c669674633ecc4
         }
       },
       "Microsoft.Extensions.Caching.Memory/6.0.1": {
@@ -95,18 +125,29 @@
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
           "Microsoft.Extensions.Options": "6.0.0",
           "Microsoft.Extensions.Primitives": "6.0.0"
+<<<<<<< HEAD
+=======
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.222.6406"
           }
+>>>>>>> 493b12128b5cabaddcd54f9e74c669674633ecc4
         }
       },
       "Microsoft.Extensions.DependencyInjection/6.0.1": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+<<<<<<< HEAD
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {},
+      "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "6.0.0"
+=======
         },
         "runtime": {
           "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
@@ -132,6 +173,7 @@
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18315"
           }
+>>>>>>> 493b12128b5cabaddcd54f9e74c669674633ecc4
         }
       },
       "Microsoft.Extensions.Logging/6.0.0": {
@@ -141,6 +183,11 @@
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
           "Microsoft.Extensions.Options": "6.0.0",
           "System.Diagnostics.DiagnosticSource": "6.0.0"
+<<<<<<< HEAD
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/6.0.0": {},
+=======
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {
@@ -157,33 +204,46 @@
           }
         }
       },
+>>>>>>> 493b12128b5cabaddcd54f9e74c669674633ecc4
       "Microsoft.Extensions.Options/6.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Microsoft.Extensions.Primitives": "6.0.0"
+<<<<<<< HEAD
+=======
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
           }
+>>>>>>> 493b12128b5cabaddcd54f9e74c669674633ecc4
         }
       },
       "Microsoft.Extensions.Primitives/6.0.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+<<<<<<< HEAD
+=======
         },
         "runtime": {
           "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
           }
+>>>>>>> 493b12128b5cabaddcd54f9e74c669674633ecc4
         }
       },
       "Microsoft.Net.Http.Headers/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "6.0.0",
           "System.Buffers": "4.5.0"
+<<<<<<< HEAD
+        }
+      },
+      "Newtonsoft.Json/13.0.2-beta3": {},
+      "RestSharp/108.0.3-alpha.0.5": {},
+=======
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {
@@ -208,21 +268,34 @@
           }
         }
       },
+>>>>>>> 493b12128b5cabaddcd54f9e74c669674633ecc4
       "System.Buffers/4.5.0": {},
       "System.Collections.Immutable/6.0.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+<<<<<<< HEAD
+=======
         },
         "runtime": {
           "lib/net6.0/System.Collections.Immutable.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
           }
+>>>>>>> 493b12128b5cabaddcd54f9e74c669674633ecc4
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+<<<<<<< HEAD
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "System.Text.Encodings.Web/4.5.0": {}
+    }
+  },
+  "libraries": {
+=======
         },
         "runtime": {
           "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {
@@ -257,6 +330,12 @@
       "path": "exceldatareader/3.7.0-develop00310",
       "hashPath": "exceldatareader.3.7.0-develop00310.nupkg.sha512"
     },
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 4e087c70007d29651880128a0b99c43a25a27514
+>>>>>>> 493b12128b5cabaddcd54f9e74c669674633ecc4
+>>>>>>> 264d92cc51a467d366217e1441817ee43bcca0d3
     "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
       "type": "package",
       "serviceable": true,

@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\GUB.TracNghiemThiBangLai.Host",
+    "\\GUB.TracNghiemThiBangLai.Share",
+    "\\GUB.TracNghiemThiBangLai.Share\\Controller",
+    "\\GUB.TracNghiemThiBangLai.WinForm"
   ],
+  "SelectedNode": "\\GUB.TracNghiemThiBangLai.Host\\HostForm.cs",
   "PreviewInSolutionExplorer": false
 }
