@@ -3,6 +3,7 @@ using GemBox.Spreadsheet;
 using GemBox.Spreadsheet.WinFormsUtilities;
 using GUB.TracNghiemThiBangLai.Entities;
 using GUB.TracNghiemThiBangLai.Share.Controller;
+using GUB.TracNghiemThiBangLai.Share.Resources;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -24,10 +25,18 @@ namespace GUB.TracNghiemThiBangLai.Host
     {
         String pathFileExcel = "";
         ComputerRepository computerRepository = new ComputerRepository();
+        int ExamTime = 0;
         public HomeForm()
         {
+            
             SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
+            
             InitializeComponent();
+            
+            ExamTime = AppSetting.ExamTime;
+            setTimelable();
+            
+            
             cbTrangThai.SelectedIndex = 0;
         }
 
@@ -159,19 +168,20 @@ namespace GUB.TracNghiemThiBangLai.Host
                             string soLanThi = dataTable.Rows[i].Cells[dataTable.Columns.Count - 4].Value.ToString();
                             if (chuThich.Equals("Có mặt") && soLanThi.Equals("0"))
                             {
-                               
+
                                 dataTable.Rows[i].Cells[dataTable.Columns.Count - 1].Value = computers[count].NumberCom.ToString();
+                                dataTable.Rows[i].Cells[dataTable.Columns.Count - 4].Value = 1;
                                 count++;
                             }
                             else if (chuThich.Equals("Có mặt") && soLanThi.Equals("1"))
                             {
                                 dataTable.Rows[i].Cells[dataTable.Columns.Count - 1].Value = "0";
-                               
+
                             }
                             else if (chuThich.Equals("Vắng mặt"))
                             {
                                 dataTable.Rows[i].Cells[dataTable.Columns.Count - 1].Value = "0";
-                               
+
                             }
                         }
                         else
@@ -270,6 +280,35 @@ namespace GUB.TracNghiemThiBangLai.Host
 
         }
 
+        // bắt đầu bài thi
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ExamTime = AppSetting.ExamTime;
+            timer1.Start();
+           
+        }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            --ExamTime;
+            setTimelable();
+            if (ExamTime == 0)
+            {
+                timer1.Stop();
+            }
+        }
+
+        private void setTimelable()
+        {
+            int minute = ExamTime / 60;
+            int second = ExamTime % 60;
+            string time = minute.ToString() + ":" + second.ToString();
+            lbTime.Text = time;
+        }
+
+        private void lbTime_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
