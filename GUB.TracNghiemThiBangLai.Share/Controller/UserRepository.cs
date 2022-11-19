@@ -60,6 +60,14 @@ namespace GUB.TracNghiemThiBangLai.Share.Controller
             return data;
         }
 
+        public async Task<User> ResetPassword(int id)
+        {
+            var idObject = new { id = id };
+            var data = new User();
+            data = await _service.CallAPIGet<User>("User/ResetPassword", idObject);
+            return data;
+        }
+
 
     }
 }
