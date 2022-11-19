@@ -1,6 +1,8 @@
 ﻿using ExcelDataReader;
 using GemBox.Spreadsheet;
 using GemBox.Spreadsheet.WinFormsUtilities;
+using GUB.TracNghiemThiBangLai.Entities;
+using GUB.TracNghiemThiBangLai.Share.Controller;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -21,6 +23,7 @@ namespace GUB.TracNghiemThiBangLai.Host
     public partial class HomeForm : Form
     {
         String pathFileExcel = "";
+        ComputerRepository computerRepository = new ComputerRepository();
         public HomeForm()
         {
             SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
@@ -91,6 +94,7 @@ namespace GUB.TracNghiemThiBangLai.Host
                     OleDbDataAdapter oda = new OleDbDataAdapter(string.Format("select * from [Sheet1$]", sheetName), cnnxls);
                     oda.Fill(tbContainer);
 
+
                     dataTable.DataSource = tbContainer;
                 }
 
@@ -123,8 +127,60 @@ namespace GUB.TracNghiemThiBangLai.Host
             // int lastRow = dataTable.Rows.Count - 1;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private async void button4_Click(object sender, EventArgs e)
         {
+            // lấy ra danh sach máy thi
+            List<Computer> computers = new List<Computer>();
+            computers = await computerRepository.GetComputers();
+
+
+            // Lấy ra HeaderText cột cuối cùng
+            string headerText = dataTable.Columns[dataTable.Columns.Count - 1].HeaderText;
+            if (!headerText.Equals("Số máy"))
+            {
+                // thêm 1 cột "Số máy" vào cuối cùng
+                DataGridViewTextBoxColumn col = new DataGridViewTextBoxColumn();
+                col.HeaderText = "Số máy";
+                col.Name = "SoMay";
+                dataTable.Columns.Add(col);
+
+
+                var count = 0;
+                // kiểm tra giá trị của từng ô trong  cột "Chú thích"
+                for (int i = 0; i < dataTable.Rows.Count; i++)
+                {
+                    if (count < computers.Count)
+                    {
+                        var a = dataTable.Rows[i].Cells[0].Value;
+                        // kiểm tra hàng hiện tại có khác null không
+                        if (dataTable.Rows[i].Cells[0].Value != null)
+                        {
+                            string chuThich = dataTable.Rows[i].Cells[dataTable.Columns.Count - 2].Value.ToString();
+                            string soLanThi = dataTable.Rows[i].Cells[dataTable.Columns.Count - 4].Value.ToString();
+                            if (chuThich.Equals("Có mặt") && soLanThi.Equals("0"))
+                            {
+                               
+                                dataTable.Rows[i].Cells[dataTable.Columns.Count - 1].Value = computers[count].NumberCom.ToString();
+                                count++;
+                            }
+                            else if (chuThich.Equals("Có mặt") && soLanThi.Equals("1"))
+                            {
+                                dataTable.Rows[i].Cells[dataTable.Columns.Count - 1].Value = "0";
+                               
+                            }
+                            else if (chuThich.Equals("Vắng mặt"))
+                            {
+                                dataTable.Rows[i].Cells[dataTable.Columns.Count - 1].Value = "0";
+                               
+                            }
+                        }
+                        else
+                        {
+                            return;
+                        }
+                    }
+                }
+            }
 
         }
 
@@ -200,6 +256,8 @@ namespace GUB.TracNghiemThiBangLai.Host
             //     workbook.Save(saveFileDialog.FileName);
             // }
 
+
+
             var workbook = new ExcelFile();
             var worksheet = workbook.Worksheets.Add("Sheet1");
             DataGridViewConverter.ImportFromDataGridView(
@@ -208,6 +266,10 @@ namespace GUB.TracNghiemThiBangLai.Host
              new ImportFromDataGridViewOptions() { ColumnHeaders = true });
             workbook.Save(pathFileExcel);
 
+
+
         }
+
+
     }
 }

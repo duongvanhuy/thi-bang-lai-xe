@@ -153,3 +153,4 @@ D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBan
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.WinForm.genruntimeconfig.cache
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Debug\net6.0-windows\ref\GUB.TracNghiemThiBangLai.WinForm.dll
 D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.WinForm.ExamResultForm.resources
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.WinForm.ExamResultForm.resources

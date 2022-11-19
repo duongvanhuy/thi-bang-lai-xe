@@ -16,14 +16,8 @@
       }
     ],
     "additionalProbingPaths": [
-<<<<<<< HEAD
       "C:\\Users\\dell\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\dell\\.nuget\\packages"
-=======
-      "C:\\Users\\ADMIN\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\ADMIN\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
->>>>>>> 34197387e3c8cacd7a005bae66c130fcb6a4fa96
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,
