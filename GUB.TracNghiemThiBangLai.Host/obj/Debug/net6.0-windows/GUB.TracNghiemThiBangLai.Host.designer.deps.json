@@ -14,6 +14,8 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
       "GemBox.Spreadsheet/49.0.1153": {
         "dependencies": {
           "HarfBuzzSharp": "2.8.2",
@@ -82,6 +84,7 @@
           }
         }
       },
+>>>>>>> af35f20016504167c918517d509d27f730d45c49
       "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "2.2.0",
@@ -301,6 +304,8 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
       "SkiaSharp/2.80.3": {
         "dependencies": {
           "System.Memory": "4.5.3"
@@ -334,6 +339,7 @@
           }
         }
       },
+>>>>>>> af35f20016504167c918517d509d27f730d45c49
       "System.Buffers/4.5.0": {},
       "System.Collections.Immutable/6.0.0": {
         "dependencies": {
@@ -344,6 +350,8 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
           }
+<<<<<<< HEAD
+=======
         }
       },
       "System.Configuration.ConfigurationManager/6.0.0": {
@@ -376,6 +384,7 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
           }
+>>>>>>> af35f20016504167c918517d509d27f730d45c49
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -542,6 +551,8 @@
       "path": "exceldatareader/3.7.0-develop00310",
       "hashPath": "exceldatareader.3.7.0-develop00310.nupkg.sha512"
     },
+<<<<<<< HEAD
+=======
     "GemBox.Spreadsheet/49.0.1153": {
       "type": "package",
       "serviceable": true,
@@ -577,6 +588,7 @@
       "path": "harfbuzzsharp.nativeassets.win32/2.8.2",
       "hashPath": "harfbuzzsharp.nativeassets.win32.2.8.2.nupkg.sha512"
     },
+>>>>>>> af35f20016504167c918517d509d27f730d45c49
     "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
       "type": "package",
       "serviceable": true,
