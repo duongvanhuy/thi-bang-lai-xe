@@ -16,15 +16,7 @@
       }
     ],
     "additionalProbingPaths": [
-<<<<<<< HEAD
       "C:\\Users\\dell\\.dotnet\\store\\|arch|\\|tfm|",
-=======
-<<<<<<< HEAD
-      "C:\\Users\\LENOVO\\.dotnet\\store\\|arch|\\|tfm|",
-=======
-      "C:\\Users\\ADMIN\\.dotnet\\store\\|arch|\\|tfm|",
->>>>>>> 493b12128b5cabaddcd54f9e74c669674633ecc4
->>>>>>> 264d92cc51a467d366217e1441817ee43bcca0d3
       "C:\\Users\\dell\\.nuget\\packages"
     ],
     "configProperties": {

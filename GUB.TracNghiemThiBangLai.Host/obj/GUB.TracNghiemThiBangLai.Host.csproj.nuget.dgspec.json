@@ -112,6 +112,14 @@
               "target": "Package",
               "version": "[3.7.0-develop00310, )"
             },
+            "GemBox.Spreadsheet": {
+              "target": "Package",
+              "version": "[49.0.1153, )"
+            },
+            "GemBox.Spreadsheet.WinFormsUtilities": {
+              "target": "Package",
+              "version": "[47.0.1398, )"
+            },
             "System.Data.OleDb": {
               "target": "Package",
               "version": "[6.0.0, )"

@@ -11,6 +11,8 @@
 
   <ItemGroup>
     <PackageReference Include="ExcelDataReader" Version="3.7.0-develop00310" />
+    <PackageReference Include="GemBox.Spreadsheet" Version="49.0.1153" />
+    <PackageReference Include="GemBox.Spreadsheet.WinFormsUtilities" Version="47.0.1398" />
     <PackageReference Include="System.Data.OleDb" Version="6.0.0" />
   </ItemGroup>
 

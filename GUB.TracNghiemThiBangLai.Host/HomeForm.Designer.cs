@@ -34,8 +34,10 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.dataTable = new System.Windows.Forms.DataGridView();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.cbTrangThai = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -43,6 +45,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -94,11 +97,14 @@
             this.dataTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataTable.Location = new System.Drawing.Point(10, 20);
+            this.dataTable.MultiSelect = false;
             this.dataTable.Name = "dataTable";
             this.dataTable.RowHeadersWidth = 51;
             this.dataTable.RowTemplate.Height = 29;
+            this.dataTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataTable.Size = new System.Drawing.Size(1162, 288);
             this.dataTable.TabIndex = 0;
+            this.dataTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTable_CellContentClick);
             // 
             // panel7
             // 
@@ -110,30 +116,56 @@
             this.panel7.Size = new System.Drawing.Size(1184, 99);
             this.panel7.TabIndex = 0;
             // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.button1);
+            this.panel8.Controls.Add(this.cbTrangThai);
+            this.panel8.Controls.Add(this.label1);
+            this.panel8.Controls.Add(this.button4);
+            this.panel8.Controls.Add(this.button2);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel8.Location = new System.Drawing.Point(265, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(917, 97);
+            this.panel8.TabIndex = 0;
+            // 
+            // cbTrangThai
+            // 
+            this.cbTrangThai.FormattingEnabled = true;
+            this.cbTrangThai.Items.AddRange(new object[] {
+            "Lựa chọn",
+            "Có mặt",
+            "Vắng mặt"});
+            this.cbTrangThai.Location = new System.Drawing.Point(174, 36);
+            this.cbTrangThai.Name = "cbTrangThai";
+            this.cbTrangThai.Size = new System.Drawing.Size(151, 28);
+            this.cbTrangThai.TabIndex = 2;
+            this.cbTrangThai.SelectedIndexChanged += new System.EventHandler(this.cbTrangThai_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(68, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 43);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Trạng thái";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(103, 5);
+            this.button4.Location = new System.Drawing.Point(493, 19);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(238, 60);
             this.button4.TabIndex = 0;
             this.button4.Text = "Kiểm tra hoạt động máy thi";
             this.button4.UseVisualStyleBackColor = true;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.button4);
-            this.panel8.Controls.Add(this.button2);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel8.Location = new System.Drawing.Point(655, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(527, 97);
-            this.panel8.TabIndex = 0;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(347, 5);
+            this.button2.Location = new System.Drawing.Point(737, 19);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(170, 57);
             this.button2.TabIndex = 0;
@@ -202,6 +234,16 @@
             this.button3.Text = "Bắt đầu làm bài thi";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(331, 35);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(156, 29);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Thay đổi trạng thái";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -242,5 +284,7 @@
         private Button button3;
         private Panel panel9;
         private DataGridView dataTable;
+        private Label label1;
+        private ComboBox cbTrangThai;
     }
 }

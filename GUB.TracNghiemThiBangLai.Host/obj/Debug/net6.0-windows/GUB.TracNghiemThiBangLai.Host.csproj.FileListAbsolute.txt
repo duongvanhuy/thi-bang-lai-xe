@@ -44,3 +44,16 @@ E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\obj\Deb
 E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\ExcelDataReader.dll
 E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\System.Data.OleDb.dll
 E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\GemBox.Spreadsheet.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\HarfBuzzSharp.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\SkiaSharp.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\GemBox.Spreadsheet.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\runtimes\osx\native\libHarfBuzzSharp.dylib
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\runtimes\win-x64\native\libHarfBuzzSharp.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\runtimes\win-x86\native\libHarfBuzzSharp.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\runtimes\osx\native\libSkiaSharp.dylib
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Host\bin\Debug\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
