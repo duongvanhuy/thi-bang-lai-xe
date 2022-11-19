@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExamForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.ptbHinhAnhCauHoi = new System.Windows.Forms.PictureBox();
@@ -52,6 +53,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnKetThuc = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblTimer = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHinhAnhCauHoi)).BeginInit();
             this.panel2.SuspendLayout();
@@ -74,7 +77,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(822, 403);
+            this.panel1.Size = new System.Drawing.Size(817, 403);
             this.panel1.TabIndex = 0;
             // 
             // ptbHinhAnhCauHoi
@@ -83,7 +86,7 @@
             this.ptbHinhAnhCauHoi.Image = ((System.Drawing.Image)(resources.GetObject("ptbHinhAnhCauHoi.Image")));
             this.ptbHinhAnhCauHoi.Location = new System.Drawing.Point(122, 75);
             this.ptbHinhAnhCauHoi.Name = "ptbHinhAnhCauHoi";
-            this.ptbHinhAnhCauHoi.Size = new System.Drawing.Size(696, 22);
+            this.ptbHinhAnhCauHoi.Size = new System.Drawing.Size(691, 22);
             this.ptbHinhAnhCauHoi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ptbHinhAnhCauHoi.TabIndex = 4;
             this.ptbHinhAnhCauHoi.TabStop = false;
@@ -93,7 +96,7 @@
             this.lblCauTraLoi.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblCauTraLoi.Location = new System.Drawing.Point(122, 97);
             this.lblCauTraLoi.Name = "lblCauTraLoi";
-            this.lblCauTraLoi.Size = new System.Drawing.Size(696, 302);
+            this.lblCauTraLoi.Size = new System.Drawing.Size(691, 302);
             this.lblCauTraLoi.TabIndex = 3;
             this.lblCauTraLoi.Text = resources.GetString("lblCauTraLoi.Text");
             this.lblCauTraLoi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -113,7 +116,7 @@
             this.lblCauHoi.ForeColor = System.Drawing.Color.Red;
             this.lblCauHoi.Location = new System.Drawing.Point(0, 0);
             this.lblCauHoi.Name = "lblCauHoi";
-            this.lblCauHoi.Size = new System.Drawing.Size(818, 75);
+            this.lblCauHoi.Size = new System.Drawing.Size(813, 75);
             this.lblCauHoi.TabIndex = 1;
             this.lblCauHoi.Text = "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?";
             this.lblCauHoi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -122,9 +125,9 @@
             // 
             this.flpDapAn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flpDapAn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpDapAn.Location = new System.Drawing.Point(0, 0);
+            this.flpDapAn.Location = new System.Drawing.Point(0, 77);
             this.flpDapAn.Name = "flpDapAn";
-            this.flpDapAn.Size = new System.Drawing.Size(310, 517);
+            this.flpDapAn.Size = new System.Drawing.Size(315, 440);
             this.flpDapAn.TabIndex = 2;
             this.flpDapAn.Paint += new System.Windows.Forms.PaintEventHandler(this.flpDapAn_Paint);
             // 
@@ -136,7 +139,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 403);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(822, 150);
+            this.panel2.Size = new System.Drawing.Size(817, 150);
             this.panel2.TabIndex = 1;
             // 
             // panel5
@@ -146,7 +149,7 @@
             this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Controls.Add(this.label12);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(479, 0);
+            this.panel5.Location = new System.Drawing.Point(474, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(339, 146);
             this.panel5.TabIndex = 1;
@@ -183,7 +186,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(818, 146);
+            this.panel4.Size = new System.Drawing.Size(813, 146);
             this.panel4.TabIndex = 0;
             // 
             // panel7
@@ -200,7 +203,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(121, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(695, 144);
+            this.panel7.Size = new System.Drawing.Size(690, 144);
             this.panel7.TabIndex = 1;
             // 
             // lblCMND
@@ -290,20 +293,39 @@
             this.btnKetThuc.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnKetThuc.Location = new System.Drawing.Point(0, 517);
             this.btnKetThuc.Name = "btnKetThuc";
-            this.btnKetThuc.Size = new System.Drawing.Size(310, 36);
+            this.btnKetThuc.Size = new System.Drawing.Size(315, 36);
             this.btnKetThuc.TabIndex = 6;
             this.btnKetThuc.Text = "Kết Thúc";
             this.btnKetThuc.UseVisualStyleBackColor = true;
+            this.btnKetThuc.Click += new System.EventHandler(this.btnKetThuc_Click);
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.flpDapAn);
+            this.panel3.Controls.Add(this.lblTimer);
             this.panel3.Controls.Add(this.btnKetThuc);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(822, 0);
+            this.panel3.Location = new System.Drawing.Point(817, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(310, 553);
+            this.panel3.Size = new System.Drawing.Size(315, 553);
             this.panel3.TabIndex = 7;
+            // 
+            // lblTimer
+            // 
+            this.lblTimer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTimer.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTimer.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTimer.Location = new System.Drawing.Point(0, 0);
+            this.lblTimer.Name = "lblTimer";
+            this.lblTimer.Size = new System.Drawing.Size(315, 77);
+            this.lblTimer.TabIndex = 0;
+            this.lblTimer.Text = "00:00";
+            this.lblTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // ExamForm
             // 
@@ -355,5 +377,7 @@
         private Button btnKetThuc;
         private Panel panel3;
         private Panel panel6;
+        private Label lblTimer;
+        private System.Windows.Forms.Timer timer1;
     }
 }

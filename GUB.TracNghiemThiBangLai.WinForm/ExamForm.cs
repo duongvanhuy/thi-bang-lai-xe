@@ -1,5 +1,6 @@
 ﻿using GUB.TracNghiemThiBangLai.Entities;
 using GUB.TracNghiemThiBangLai.Share.Controller;
+using GUB.TracNghiemThiBangLai.Share.Model;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -17,7 +18,7 @@ namespace GUB.TracNghiemThiBangLai.WinForm
     {
         QuestionRepository questionRepository;
         Task<List<Question>> questionList;
-        
+        int count;
         public ExamForm()
         {
             InitializeComponent();
@@ -30,10 +31,17 @@ namespace GUB.TracNghiemThiBangLai.WinForm
         {
             var listQuestion = await questionRepository.GetQuestions();
             addListFlpDapAn(listQuestion);
-            Question question = await questionRepository.GetByQuestion(2);
+
+            //Hiển thị câu hỏi đầu tiên của list
+            Question question = await questionRepository.GetByQuestion(listQuestion[0].Id);
             renderQuestion(question);
 
+            //Chạy thời gian
+            runTime();
+
         }
+
+        
 
         //Render 1 list flow đáp án
         public void addListFlpDapAn(List<Question> listQuestion  )
@@ -67,6 +75,20 @@ namespace GUB.TracNghiemThiBangLai.WinForm
             //}
             for (int i = 1; i <= 4; i++)
             {
+                var answer = "";
+                if(i == 1)
+                {
+                    answer = "A";
+                } else if(i == 2)
+                {
+                   answer = "B";
+                } else if(i == 3)
+                {
+                    answer = "C";
+                } else if(i == 4)
+                {
+                    answer = "D";
+                }
                 RadioButton radioButton = new RadioButton();
                 radioButton.AutoSize = true;
                 radioButton.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -74,7 +96,7 @@ namespace GUB.TracNghiemThiBangLai.WinForm
                 radioButton.Size = new System.Drawing.Size(21, 40);
                 radioButton.TabIndex = i;
                 radioButton.TabStop = true;
-                radioButton.Text = i.ToString();
+                radioButton.Text = answer;
                 radioButton.Click += new EventHandler(radioButton_CheckedChanged);
                 radioButton.UseVisualStyleBackColor = true;
 
@@ -83,7 +105,7 @@ namespace GUB.TracNghiemThiBangLai.WinForm
             }
             flowLayoutPanel.Name = "flowLayoutPanel" + question.Id.ToString();//Đặt tên theo số câu hỏi
             flowLayoutPanel.Tag = question.Id;  
-            flowLayoutPanel.Size = new System.Drawing.Size(144, 60);
+            flowLayoutPanel.Size = new System.Drawing.Size(150, 60);
             flowLayoutPanel.Click += new EventHandler(flowLayoutPanel_Clicked);
             return flowLayoutPanel;
         }
@@ -93,17 +115,19 @@ namespace GUB.TracNghiemThiBangLai.WinForm
         private void renderQuestion(Question question)
         {
             lblCauHoi.Text= question.Content;
-            //ptbHinhAnhCauHoi.Image = LoadImage(question.Image);
+            ptbHinhAnhCauHoi.Image = LoadImage(question.Image);
             
-            lblCauTraLoi.Text= string.Format("1. {0} \n2. {1} \n3. {2} \n4. {3}", question.AnswerA, question.AnswerB, question.AnswerC, question.AnswerD);
+            
+            lblCauTraLoi.Text= string.Format("A. {0} \nB. {1} \nC. {2} \nD. {3}", question.AnswerA, question.AnswerB, question.AnswerC, question.AnswerD);
         }
 
         //Convert Base64 to Image 
         public Image LoadImage(string base64)
         {
+            var stringBase64 = base64.Split("data:image/png;base64,")[1];
             //data:image/gif;base64,
             //this image is a single pixel (black)
-            byte[] bytes = Convert.FromBase64String(base64);
+            byte[] bytes = Convert.FromBase64String(stringBase64);
 
             Image image;
             using (MemoryStream ms = new MemoryStream(bytes))
@@ -149,6 +173,93 @@ namespace GUB.TracNghiemThiBangLai.WinForm
             {
                 radioButton.Parent.BackColor = Color.Yellow;
             }
+        }
+
+        private async void btnKetThuc_Click(object sender, EventArgs e)
+        {
+            List<Answer> listAnswer = new List<Answer>();
+            var confirm = new DialogResult();
+            if (count != 0) // Thời gian hết thì phải cần show confirm
+            {
+                confirm = MessageBox.Show("Bạn có chắc là muốn kết thúc không?", "Chú ý",
+                    MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            } else // Nếu thời gian đã hết thì confirm mặc định là OK 
+            {
+                confirm = DialogResult.OK;
+            }
+            
+            if (confirm == DialogResult.OK)
+            {
+                for (var i = 0; i < flpDapAn.Controls.Count; i++)
+                {
+                    var flow = flpDapAn.Controls[i] as FlowLayoutPanel;
+                    for (var j = 1; j < flow.Controls.Count; j++)
+                    {
+                        var radioButton = flow.Controls[j] as RadioButton;
+                        if (radioButton.Checked)
+                        {
+                            listAnswer.Add(new Answer()
+                            {
+                                Id = i + 1,
+                                UserAnswer = radioButton.Text
+                            });
+                        }
+                    }
+                }
+                if (count != 0 && listAnswer.Count < 20) //Làm chưa đủ 20 câu
+                {
+                    MessageBox.Show("Bạn chưa hoàn thành tất cả các câu hỏi");
+                }
+                else // Làm đủ 20 câu và đã hết thời gian
+                {
+                    timer1.Stop(); // Nộp bài rồi thì dừng thời gian
+                    var correctAnswer = 0;
+                    foreach (var answer in listAnswer)
+                    {
+                        Question question = await questionRepository.GetByQuestion(answer.Id);
+                        if (question.CorrectAnswer.Equals(answer.UserAnswer))
+                        {
+                            correctAnswer++;
+                        }
+                    }
+                    var examResultForm = new ExamResultForm(listAnswer, correctAnswer);
+                    if (examResultForm.ShowDialog() == DialogResult.Cancel)
+                    {
+                        examResultForm.Close();
+                        this.Close();
+                    }
+                }
+            }
+        }
+
+        // Hàm khởi chạy timer
+        public void runTime()
+        {
+            count = 20; //Set up thời gian chạy
+            timer1.Start();
+        }
+
+        public string convert(int count)
+        {
+            int m = count / 60;
+            int s = count % 60;
+
+            return string.Format($"{m:0#}:{s:0#}");
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            count--;
+            if (count == 0) // Hết giờ thì làm gì
+            {
+                timer1.Stop();
+                MessageBox.Show("Thời gian làm bài đã hết!");
+                btnKetThuc_Click(sender, e);
+            } else if (count == 10) // Gần hết giờ thì làm gì
+            {
+                lblTimer.ForeColor = Color.Red;
+            }
+            lblTimer.Text = convert(count);
         }
     }
 }
