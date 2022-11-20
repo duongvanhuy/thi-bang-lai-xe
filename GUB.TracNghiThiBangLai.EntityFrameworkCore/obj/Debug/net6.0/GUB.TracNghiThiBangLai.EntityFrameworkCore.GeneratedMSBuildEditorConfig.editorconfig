@@ -8,8 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GUB.TracNghiThiBangLai.EntityFrameworkCore
-<<<<<<< HEAD
 build_property.ProjectDir = D:\Workspace\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\
-=======
-build_property.ProjectDir = D:\Study\DHPhuXuan\Nam3\HK-Fall\CSharp\DoAn\thi-bang-lai-xe\GUB.TracNghiThiBangLai.EntityFrameworkCore\
->>>>>>> e58f7003947f02ff40f35614a16cc80846f9ae9f
