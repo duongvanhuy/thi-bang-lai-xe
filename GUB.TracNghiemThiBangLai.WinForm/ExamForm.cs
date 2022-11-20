@@ -17,8 +17,11 @@ namespace GUB.TracNghiemThiBangLai.WinForm
     public partial class ExamForm : Form
     {
         QuestionRepository questionRepository;
-        Task<List<Question>> questionList;
+        List<Question> questionList;
         int count;
+
+       
+
         public ExamForm()
         {
             InitializeComponent();
@@ -29,11 +32,12 @@ namespace GUB.TracNghiemThiBangLai.WinForm
 
         public async void Initial()
         {
-            var listQuestion = await questionRepository.GetQuestions();
-            addListFlpDapAn(listQuestion);
+            
+            questionList = await questionRepository.GetQuestions() ;
+            addListFlpDapAn(questionList);
 
             //Hiển thị câu hỏi đầu tiên của list
-            Question question = await questionRepository.GetByQuestion(listQuestion[0].Id);
+            Question question = await questionRepository.GetByQuestion(questionList[0].Id);
             renderQuestion(question);
 
             //Chạy thời gian
@@ -46,15 +50,19 @@ namespace GUB.TracNghiemThiBangLai.WinForm
         //Render 1 list flow đáp án
         public void addListFlpDapAn(List<Question> listQuestion  )
         {
-            foreach (Question question in listQuestion)
+            //foreach (Question question in listQuestion)
+            //{
+            //    flpDapAn.Controls.Add(createPanelInFlowPanel(question));
+            //}
+            for(var i = 0; i < listQuestion.Count; i ++)
             {
-                flpDapAn.Controls.Add(createPanelInFlowPanel(question));
+                flpDapAn.Controls.Add(createPanelInFlowPanel(listQuestion[i], i + 1)); // Số thứ tự câu hỏi
             }
         }
         
 
         //Tạo ra một flow đáp án
-        private FlowLayoutPanel createPanelInFlowPanel(Question question)
+        private FlowLayoutPanel createPanelInFlowPanel(Question question, int sttQuestion)
         {
             FlowLayoutPanel flowLayoutPanel = new FlowLayoutPanel();
             flowLayoutPanel.BorderStyle = BorderStyle.FixedSingle;
@@ -62,10 +70,10 @@ namespace GUB.TracNghiemThiBangLai.WinForm
             Label label = new Label();
             label.AutoSize = true;
             label.Dock = System.Windows.Forms.DockStyle.Fill;
-            label.Name = "label" + question.Id.ToString();
+            label.Name = "label" + sttQuestion;
             label.Size = new System.Drawing.Size(25, 46);
             label.Tag = question.Id;
-            label.Text = question.Id.ToString(); //Số câu hỏi
+            label.Text = sttQuestion.ToString(); //Số câu hỏi
             label.Click += new EventHandler(labelQuestion_Clicked);
             label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             flowLayoutPanel.Controls.Add(label);
@@ -97,6 +105,7 @@ namespace GUB.TracNghiemThiBangLai.WinForm
                 radioButton.TabIndex = i;
                 radioButton.TabStop = true;
                 radioButton.Text = answer;
+                radioButton.Tag = question.Id;
                 radioButton.Click += new EventHandler(radioButton_CheckedChanged);
                 radioButton.UseVisualStyleBackColor = true;
 
@@ -115,16 +124,35 @@ namespace GUB.TracNghiemThiBangLai.WinForm
         private void renderQuestion(Question question)
         {
             lblCauHoi.Text= question.Content;
-            ptbHinhAnhCauHoi.Image = LoadImage(question.Image);
+
+            if(question.Image.Length >0 )
+            {
+                ptbHinhAnhCauHoi.Image = LoadImage(question.Image);
+                lblCauTraLoi.Dock = DockStyle.Bottom;
+            }
+            else
+            {
+                ptbHinhAnhCauHoi.Image = null;
+                lblCauTraLoi.Dock = DockStyle.Fill;
+            }
+            
+            if (question.AnswerD.Length == 0)
+            {
+                lblCauTraLoi.Text = string.Format("A. {0} \nB. {1} \nC. {2} ", question.AnswerA, question.AnswerB, question.AnswerC);
+            }
+            else
+            {
+                lblCauTraLoi.Text= string.Format("A. {0} \nB. {1} \nC. {2} \nD. {3}", question.AnswerA, question.AnswerB, question.AnswerC, question.AnswerD);
+            }
             
             
-            lblCauTraLoi.Text= string.Format("A. {0} \nB. {1} \nC. {2} \nD. {3}", question.AnswerA, question.AnswerB, question.AnswerC, question.AnswerD);
         }
 
         //Convert Base64 to Image 
         public Image LoadImage(string base64)
         {
-            var stringBase64 = base64.Split("data:image/png;base64,")[1];
+            
+            var stringBase64 = base64.Split("data:image/jpeg;base64,")[1];
             //data:image/gif;base64,
             //this image is a single pixel (black)
             byte[] bytes = Convert.FromBase64String(stringBase64);
@@ -171,6 +199,8 @@ namespace GUB.TracNghiemThiBangLai.WinForm
             var radioButton = (RadioButton)sender;
             if(radioButton.Checked)
             {
+                Question question = await questionRepository.GetByQuestion(Convert.ToInt32( radioButton.Tag));
+                renderQuestion(question);
                 radioButton.Parent.BackColor = Color.Yellow;
             }
         }
@@ -206,17 +236,18 @@ namespace GUB.TracNghiemThiBangLai.WinForm
                         }
                     }
                 }
-                if (count != 0 && listAnswer.Count < 20) //Làm chưa đủ 20 câu
+                if (count != 0 && listAnswer.Count < 25) //Làm chưa đủ 25 câu
                 {
                     MessageBox.Show("Bạn chưa hoàn thành tất cả các câu hỏi");
                 }
-                else // Làm đủ 20 câu và đã hết thời gian
+                else // Làm đủ 25 câu và đã hết thời gian
                 {
                     timer1.Stop(); // Nộp bài rồi thì dừng thời gian
                     var correctAnswer = 0;
                     foreach (var answer in listAnswer)
                     {
-                        Question question = await questionRepository.GetByQuestion(answer.Id);
+                        //var listQuestion = await questionRepository.GetQuestions();
+                        Question question = questionList[answer.Id - 1];
                         if (question.CorrectAnswer.Equals(answer.UserAnswer))
                         {
                             correctAnswer++;
