@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Host\\GUB.TracNghiemThiBangLai.Host.csproj": {}
+    "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Host\\GUB.TracNghiemThiBangLai.Host.csproj": {}
   },
   "projects": {
-    "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj": {
+    "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj",
+        "projectUniqueName": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj",
         "projectName": "GUB.TracNghiemThiBangLai.Entities",
-        "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\obj\\",
+        "projectPath": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,25 +61,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Host\\GUB.TracNghiemThiBangLai.Host.csproj": {
+    "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Host\\GUB.TracNghiemThiBangLai.Host.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Host\\GUB.TracNghiemThiBangLai.Host.csproj",
+        "projectUniqueName": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Host\\GUB.TracNghiemThiBangLai.Host.csproj",
         "projectName": "GUB.TracNghiemThiBangLai.Host",
-        "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Host\\GUB.TracNghiemThiBangLai.Host.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Host\\obj\\",
+        "projectPath": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Host\\GUB.TracNghiemThiBangLai.Host.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Host\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,11 +89,11 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj": {
-                "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj"
+              "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj": {
+                "projectPath": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj"
               },
-              "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj": {
-                "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj"
+              "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj": {
+                "projectPath": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj"
               }
             }
           }
@@ -119,6 +111,14 @@
             "ExcelDataReader": {
               "target": "Package",
               "version": "[3.7.0-develop00310, )"
+            },
+            "GemBox.Spreadsheet": {
+              "target": "Package",
+              "version": "[49.0.1153, )"
+            },
+            "GemBox.Spreadsheet.WinFormsUtilities": {
+              "target": "Package",
+              "version": "[47.0.1398, )"
             },
             "System.Data.OleDb": {
               "target": "Package",
@@ -144,25 +144,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj": {
+    "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj",
+        "projectUniqueName": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj",
         "projectName": "GUB.TracNghiemThiBangLai.Share",
-        "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\obj\\",
+        "projectPath": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\GUB.TracNghiemThiBangLai.Share.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Share\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -176,8 +172,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj": {
-                "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj"
+              "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj": {
+                "projectPath": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj"
               }
             }
           }
@@ -225,7 +221,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

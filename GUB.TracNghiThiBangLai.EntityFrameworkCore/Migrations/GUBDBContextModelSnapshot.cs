@@ -57,10 +57,13 @@ namespace GUB.TracNghiThiBangLai.EntityFrameworkCore.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<string>("CCCD")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("DepartmentId")
+                    b.Property<int?>("DepartmentId")
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("ModifiedDate")
@@ -69,14 +72,9 @@ namespace GUB.TracNghiThiBangLai.EntityFrameworkCore.Migrations
                     b.Property<int>("NumberCom")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.HasIndex("DepartmentId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Computers");
                 });
@@ -217,21 +215,9 @@ namespace GUB.TracNghiThiBangLai.EntityFrameworkCore.Migrations
 
             modelBuilder.Entity("GUB.TracNghiemThiBangLai.Entities.Computer", b =>
                 {
-                    b.HasOne("GUB.TracNghiemThiBangLai.Entities.Department", "Department")
+                    b.HasOne("GUB.TracNghiemThiBangLai.Entities.Department", null)
                         .WithMany("Computers")
-                        .HasForeignKey("DepartmentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("GUB.TracNghiemThiBangLai.Entities.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Department");
-
-                    b.Navigation("User");
+                        .HasForeignKey("DepartmentId");
                 });
 
             modelBuilder.Entity("GUB.TracNghiemThiBangLai.Entities.Department", b =>

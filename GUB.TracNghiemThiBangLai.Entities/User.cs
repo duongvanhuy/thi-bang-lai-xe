@@ -13,5 +13,10 @@ namespace GUB.TracNghiemThiBangLai.Entities
         public string Phone { get; set; }
         public string Address { get; set; }
         public DateTime Birthday { get; set; }
+
+        public static implicit operator Task<object>(User v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

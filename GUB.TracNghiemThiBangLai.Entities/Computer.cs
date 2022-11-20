@@ -9,7 +9,9 @@ namespace GUB.TracNghiemThiBangLai.Entities
     public class Computer : BaseEnitities
     {
         public int NumberCom { get; set; }
-        public Department Department { get; set; }
-        public User User { get; set; }
+        //   public Department? Department { get; set; }
+        //   public User? User { get; set; }
+
+        public string? CCCD { get; set; }
     }
 }
