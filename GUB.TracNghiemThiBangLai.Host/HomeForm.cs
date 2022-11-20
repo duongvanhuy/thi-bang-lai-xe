@@ -3,6 +3,7 @@ using GemBox.Spreadsheet;
 using GemBox.Spreadsheet.WinFormsUtilities;
 using GUB.TracNghiemThiBangLai.Entities;
 using GUB.TracNghiemThiBangLai.Share.Controller;
+using GUB.TracNghiemThiBangLai.Share.Resources;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -24,11 +25,32 @@ namespace GUB.TracNghiemThiBangLai.Host
     {
         String pathFileExcel = "";
         ComputerRepository computerRepository = new ComputerRepository();
+        ResultExamRepository resultExamRepository = new ResultExamRepository();
+        int ExamTime = 0;
+
+
+        // lưu tạm danh sách 5 người đang thi
+        List<string> listCCCDMemory = new List<string>();
+
+
+        bool isHeader = false; // biến kiểm tra header hoạt động máy thi
+
+
         public HomeForm()
         {
+
             SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
+
             InitializeComponent();
+
+            ExamTime = AppSetting.ExamTime;
+            setTimelable();
+
+
             cbTrangThai.SelectedIndex = 0;
+
+            // set cứng số máy trong phòng thi
+            lblSoMayHoatDong.Text = "5";
         }
 
         private void ImportFileExcel(string pathFile)
@@ -127,16 +149,24 @@ namespace GUB.TracNghiemThiBangLai.Host
             // int lastRow = dataTable.Rows.Count - 1;
         }
 
+        /// <summary>
+        /// kiểm tra hoạt động máy thi
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void button4_Click(object sender, EventArgs e)
         {
             // lấy ra danh sach máy thi
             List<Computer> computers = new List<Computer>();
             computers = await computerRepository.GetComputers();
-
+            var count = 0;
+           
 
             // Lấy ra HeaderText cột cuối cùng
             string headerText = dataTable.Columns[dataTable.Columns.Count - 1].HeaderText;
-            if (!headerText.Equals("Số máy"))
+
+            // Kiểm tra cột "Số máy" đã tồn tại trong file excel chưa
+            if (!isHeader)
             {
                 // thêm 1 cột "Số máy" vào cuối cùng
                 DataGridViewTextBoxColumn col = new DataGridViewTextBoxColumn();
@@ -145,7 +175,7 @@ namespace GUB.TracNghiemThiBangLai.Host
                 dataTable.Columns.Add(col);
 
 
-                var count = 0;
+
                 // kiểm tra giá trị của từng ô trong  cột "Chú thích"
                 for (int i = 0; i < dataTable.Rows.Count; i++)
                 {
@@ -157,22 +187,76 @@ namespace GUB.TracNghiemThiBangLai.Host
                         {
                             string chuThich = dataTable.Rows[i].Cells[dataTable.Columns.Count - 2].Value.ToString();
                             string soLanThi = dataTable.Rows[i].Cells[dataTable.Columns.Count - 4].Value.ToString();
+
+
                             if (chuThich.Equals("Có mặt") && soLanThi.Equals("0"))
                             {
-                               
+
                                 dataTable.Rows[i].Cells[dataTable.Columns.Count - 1].Value = computers[count].NumberCom.ToString();
+                                dataTable.Rows[i].Cells[dataTable.Columns.Count - 4].Value = 1;
+                                listCCCDMemory.Add(dataTable.Rows[i].Cells[3].Value.ToString());
+
+                                // lưu tạm danh sách người thi tương ứng với máy thi vào CSDL
+                                await computerRepository.UpdateComputer(computers[count].Id, dataTable.Rows[i].Cells[3].Value.ToString());
                                 count++;
                             }
-                            else if (chuThich.Equals("Có mặt") && soLanThi.Equals("1"))
+                            //else if (chuThich.Equals("Có mặt") && soLanThi.Equals("1"))
+                            //{
+                            //    dataTable.Rows[i].Cells[dataTable.Columns.Count - 1].Value = "0";
+
+                            //}
+                            //else if (chuThich.Equals("Vắng mặt"))
+                            //{
+                            //    dataTable.Rows[i].Cells[dataTable.Columns.Count - 1].Value = "0";
+
+                            //}
+                        }
+                        else
+                        {
+                            return;
+                        }
+                    }
+                }
+                isHeader = true;
+            }
+            // kết thúc bài thi lần 1 - update danh sách người thi lần 2
+            else
+            {
+                // kiểm tra giá trị của từng ô trong  cột "Chú thích"
+                for (int i = 0; i < dataTable.Rows.Count; i++)
+                {
+                    if (count < computers.Count)
+                    {
+                       
+                        // kiểm tra hàng hiện tại có khác null không
+                        if (dataTable.Rows[i].Cells[0].Value != null)
+                        {
+                            string chuThich = dataTable.Rows[i].Cells[dataTable.Columns.Count - 3].Value.ToString();
+                            string soLanThi = dataTable.Rows[i].Cells[dataTable.Columns.Count - 5].Value.ToString();
+
+
+                            if (chuThich.Equals("Có mặt") && soLanThi.Equals("0"))
                             {
-                                dataTable.Rows[i].Cells[dataTable.Columns.Count - 1].Value = "0";
-                               
+
+
+                                dataTable.Rows[i].Cells[dataTable.Columns.Count - 2].Value = computers[count].NumberCom.ToString();
+                                dataTable.Rows[i].Cells[dataTable.Columns.Count - 5].Value = 1;
+                                listCCCDMemory.Add(dataTable.Rows[i].Cells[3].Value.ToString());
+
+                                // lưu tạm danh sách người thi tương ứng với máy thi vào CSDL
+                                await computerRepository.UpdateComputer(computers[count].Id, dataTable.Rows[i].Cells[3].Value.ToString());
+                                count++;
                             }
-                            else if (chuThich.Equals("Vắng mặt"))
-                            {
-                                dataTable.Rows[i].Cells[dataTable.Columns.Count - 1].Value = "0";
-                               
-                            }
+                            //else if (chuThich.Equals("Có mặt") && soLanThi.Equals("1"))
+                            //{
+                            //    dataTable.Rows[i].Cells[dataTable.Columns.Count - 1].Value = "0";
+
+                            //}
+                            //else if (chuThich.Equals("Vắng mặt"))
+                            //{
+                            //    dataTable.Rows[i].Cells[dataTable.Columns.Count - 1].Value = "0";
+
+                            //}
                         }
                         else
                         {
@@ -181,6 +265,7 @@ namespace GUB.TracNghiemThiBangLai.Host
                     }
                 }
             }
+            //  importDefault = 1;
 
         }
 
@@ -189,6 +274,7 @@ namespace GUB.TracNghiemThiBangLai.Host
 
         }
 
+        // thay đổi trạng thái của người dùng
         private void button1_Click_1(object sender, EventArgs e)
         {
             // kiểm tra coi có hàng nào trong datatable được chọn hay không
@@ -205,9 +291,6 @@ namespace GUB.TracNghiemThiBangLai.Host
                     WriteExcelFile();
 
                 }
-
-
-
             }
             else
             {
@@ -270,6 +353,175 @@ namespace GUB.TracNghiemThiBangLai.Host
 
         }
 
+        // bắt đầu bài thi
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ExamTime = AppSetting.ExamTime;
+            timer1.Start();
 
+            lblSoNguoiDangThi.Text = listCCCDMemory.Count.ToString();
+
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            --ExamTime;
+            setTimelable();
+
+            // hết thời gian
+            if (ExamTime == 0)
+            {
+                timer1.Stop();
+                updateResultInDataTable();
+            }
+        }
+
+        private void setTimelable()
+        {
+            int minute = ExamTime / 60;
+            int second = ExamTime % 60;
+            string time = minute.ToString() + ":" + second.ToString();
+            lbTime.Text = time;
+        }
+
+        private void lbTime_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //kết thúc bài thi
+        private async void button5_Click(object sender, EventArgs e)
+        {
+            // hiện thị confirm trước khi thay đổi
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn kết thúc tất cả bài thi không?", "Thông báo", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                updateResultInDataTable();
+                ExamTime = 0;
+                lblSoNguoiThiXong.Text = listCCCDMemory.Count.ToString();
+                lblSoNguoiDangThi.Text = "0";
+
+
+
+            }
+
+        }
+
+        private async void updateResultInDataTable()
+        {
+            // danh sách kết quả thi
+            var listResultExam = await resultExamRepository.GetResultExams();
+
+            // thêm vào cột cuối cùng phần trạng thái "Đạt" và "Không đạt"
+            // Lấy ra HeaderText cột cuối cùng
+            string headerText = dataTable.Columns[dataTable.Columns.Count - 1].HeaderText;
+            // Kiểm tra cột "Số máy" đã tồn tại trong file excel chưa
+            if (!headerText.Equals("Trạng thái"))
+            {
+                // thêm 1 cột "Số máy" vào cuối cùng
+                DataGridViewTextBoxColumn col = new DataGridViewTextBoxColumn();
+                col.HeaderText = "Trạng thái";
+                col.Name = "trangThai";
+                dataTable.Columns.Add(col);
+
+                // kiểm tra listResultExam có CCCD nào trùng với listCCCDMemory không
+                // nếu có cập nhật lại điểm ở dataTable
+                for (int i = 0; i < listResultExam.Count; i++)
+                {
+                    for (int j = 0; j < listCCCDMemory.Count; j++)
+                    {
+                        if (listResultExam[i].CMND.Equals(listCCCDMemory[j]))
+                        {
+
+                            dataTable.Rows[j].Cells[dataTable.Columns.Count - 4].Value = listResultExam[i].NumberOfCorrect;
+                            if (listResultExam[i].NumberOfCorrect >= 16)
+                            {
+
+                                dataTable.Rows[j].Cells[dataTable.Columns.Count - 1].Value = "Đạt";
+
+                            }
+                            else
+                            {
+                                dataTable.Rows[j].Cells[dataTable.Columns.Count - 1].Value = "Không đạt";
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        private void SapXepVaoMayThi()
+        {
+
+        }
+
+        // quá trình thi
+        private async void button6_Click(object sender, EventArgs e)
+        {
+            // kiểm tra người thi đã thi xong chưa
+
+            // danh sách kết quả thi
+            var listResultExam = await resultExamRepository.GetResultExams();
+            string headerText = dataTable.Columns[dataTable.Columns.Count - 1].HeaderText;
+            int count = 0; // số người thi xong
+            bool isHeader = false; // kiểm tra coi có cột trạng thái 
+
+            // kiểm tra listResultExam có CCCD nào trùng với listCCCDMemory không
+            // nếu có cập nhật lại điểm ở dataTable và thêm 1 ô trạng thái
+            for (int i = 0; i < listResultExam.Count; i++)
+            {
+                for (int j = 0; j < listCCCDMemory.Count; j++)
+                {
+                    if (listResultExam[i].CMND.Equals(listCCCDMemory[j]))
+                    {
+                        if (!isHeader)
+                        {
+                            // thêm 1 cột "Số máy" vào cuối cùng
+                            DataGridViewTextBoxColumn col = new DataGridViewTextBoxColumn();
+                            col.HeaderText = "Trạng thái";
+                            col.Name = "trangThai";
+                            dataTable.Columns.Add(col);
+                        }
+
+
+                        dataTable.Rows[j].Cells[dataTable.Columns.Count - 4].Value = listResultExam[i].NumberOfCorrect;
+                        if (listResultExam[i].NumberOfCorrect >= 16)
+                        {
+
+                            dataTable.Rows[j].Cells[dataTable.Columns.Count - 1].Value = "Đạt";
+
+                        }
+                        else
+                        {
+                            dataTable.Rows[j].Cells[dataTable.Columns.Count - 1].Value = "Không đạt";
+
+                        }
+                        count++;
+                        isHeader = true;
+
+                    }
+                }
+            }
+
+            // cập nhật lại số người đang thi và đã thi xong
+            lblSoNguoiDangThi.Text = (listCCCDMemory.Count - count).ToString();
+            lblSoNguoiThiXong.Text = count.ToString();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSoMayHoatDong_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -31,11 +31,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.lblCMND = new System.Windows.Forms.Label();
+            this.lblCCCD = new System.Windows.Forms.Label();
             this.lblDiaChi = new System.Windows.Forms.Label();
             this.lblNgaySinh = new System.Windows.Forms.Label();
             this.lblHoVaTen = new System.Windows.Forms.Label();
-            this.lblSBD = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -85,11 +84,10 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.lblCMND);
+            this.panel4.Controls.Add(this.lblCCCD);
             this.panel4.Controls.Add(this.lblDiaChi);
             this.panel4.Controls.Add(this.lblNgaySinh);
             this.panel4.Controls.Add(this.lblHoVaTen);
-            this.panel4.Controls.Add(this.lblSBD);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.label5);
@@ -101,14 +99,14 @@
             this.panel4.Size = new System.Drawing.Size(437, 174);
             this.panel4.TabIndex = 2;
             // 
-            // lblCMND
+            // lblCCCD
             // 
-            this.lblCMND.AutoSize = true;
-            this.lblCMND.Location = new System.Drawing.Point(133, 129);
-            this.lblCMND.Name = "lblCMND";
-            this.lblCMND.Size = new System.Drawing.Size(81, 20);
-            this.lblCMND.TabIndex = 9;
-            this.lblCMND.Text = "192061000";
+            this.lblCCCD.AutoSize = true;
+            this.lblCCCD.Location = new System.Drawing.Point(133, 129);
+            this.lblCCCD.Name = "lblCCCD";
+            this.lblCCCD.Size = new System.Drawing.Size(81, 20);
+            this.lblCCCD.TabIndex = 9;
+            this.lblCCCD.Text = "192061000";
             // 
             // lblDiaChi
             // 
@@ -137,24 +135,15 @@
             this.lblHoVaTen.TabIndex = 6;
             this.lblHoVaTen.Text = "Trần Vĩnh Lãm";
             // 
-            // lblSBD
-            // 
-            this.lblSBD.AutoSize = true;
-            this.lblSBD.Location = new System.Drawing.Point(133, 9);
-            this.lblSBD.Name = "lblSBD";
-            this.lblSBD.Size = new System.Drawing.Size(17, 20);
-            this.lblSBD.TabIndex = 5;
-            this.lblSBD.Text = "2";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(6, 129);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 20);
+            this.label6.Size = new System.Drawing.Size(72, 20);
             this.label6.TabIndex = 4;
-            this.label6.Text = "Số CMND:";
+            this.label6.Text = "Số CCCD:";
             // 
             // label7
             // 
@@ -192,9 +181,9 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(6, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 20);
+            this.label4.Size = new System.Drawing.Size(133, 20);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Số báo danh:";
+            this.label4.Text = "Thông tin thí sinh";
             // 
             // label2
             // 
@@ -361,11 +350,10 @@
         private PictureBox pictureBox1;
         private Panel panel2;
         private Panel panel4;
-        private Label lblCMND;
+        private Label lblCCCD;
         private Label lblDiaChi;
         private Label lblNgaySinh;
         private Label lblHoVaTen;
-        private Label lblSBD;
         private Label label6;
         private Label label7;
         private Label label5;

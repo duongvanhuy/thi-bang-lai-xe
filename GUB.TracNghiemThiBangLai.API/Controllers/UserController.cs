@@ -42,6 +42,23 @@ namespace GUB.TracNghiemThiBangLai.API.Controllers
                 return BadRequest(e.Message);
             }
         }
+
+
+        [HttpGet]
+        public async Task<IActionResult> GetUserByCCCD(string CCCD)
+        {
+            try
+            {
+                var users = await _context.Set<User>().Where(x => x.CCCD == CCCD).FirstOrDefaultAsync();
+                return Ok(users);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+
+
         [HttpPost]
         public async Task<IActionResult> CreateUser(User user)
         {

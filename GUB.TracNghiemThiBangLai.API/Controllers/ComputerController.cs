@@ -30,6 +30,21 @@ namespace GUB.TracNghiemThiBangLai.API.Controllers
             }
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetComputerByNumber(int number)
+        {
+            try
+            {
+                var computer = await _context.Set<Computer>().FirstOrDefaultAsync(x => x.NumberCom == number);
+                return Ok(computer);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+        
+
         [HttpPost]
         public async Task<IActionResult> UpdateComputer(int id, string CCCD)
         {
