@@ -21,14 +21,14 @@ namespace GUB.TracNghiemThiBangLai.WinForm
 
         public void halderResult(List<Answer> listAnswer, int correctAnswer)
         {
-            var noAnswer = 20 - listAnswer.Count;
-            var wrongAnswer = 20 - noAnswer - correctAnswer;
+            var noAnswer = 25 - listAnswer.Count;
+            var wrongAnswer = 25 - noAnswer - correctAnswer;
 
             lblSai.Text = wrongAnswer.ToString();
             lblDung.Text = correctAnswer.ToString();
             lblChua.Text = noAnswer.ToString();
 
-            if(correctAnswer >= 16)
+            if(correctAnswer >= 22)
             {
                 lblKetQua.Text = "Đạt";
             } else
