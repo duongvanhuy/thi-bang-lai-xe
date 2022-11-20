@@ -31,17 +31,20 @@ namespace GUB.TracNghiemThiBangLai.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllResultExam()
         {
+
+            try
             {
-                try
-                {
-                    var resultExams = await _context.Set<ResultExam>().ToListAsync();
-                    return Ok(resultExams);
-                }
-                catch (Exception e)
-                {
-                    return BadRequest(e.Message);
-                }
+                var x = DateTime.Now.AddMinutes(-20);
+                // lấy ra danh sách các bản ghi trong 20 phút vừa qua
+                //  var resultExams = await _context.Set<ResultExam>().Where(x => x.CreatedDate >= DateTime.Now.AddMinutes(-20)).ToListAsync();
+                 var resultExams = await _context.Set<ResultExam>().ToListAsync();
+                return Ok(resultExams);
             }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+
         }
 
         [HttpPost]
@@ -88,5 +91,5 @@ namespace GUB.TracNghiemThiBangLai.API.Controllers
             }
         }
     }
-    
+
 }

@@ -27,8 +27,9 @@ namespace GUB.TracNghiemThiBangLai.Share.Service
             try
             {
                 var resource = JsonConvert.SerializeObject(data);
-                var client = new RestClient(_baseUrl);
-                var request = new RestRequest(endPonit, Method.Post);
+                //  var client = new RestClient(_baseUrl);
+                var requestQueryString = endPonit + GetQueryString(data);
+                var request = new RestRequest(requestQueryString, Method.Post);
                 request.AddHeader("content-type", "application/json");
                 request.AddJsonBody(resource);
 
@@ -37,7 +38,7 @@ namespace GUB.TracNghiemThiBangLai.Share.Service
                 {
                     request.AddHeader("Authorization", jwToken);
                 }*/
-                var response = await client.ExecuteAsync<T>(request);
+                var response = await _client.ExecuteAsync<T>(request);
 
               /*  var dataReponse = JsonConvert.DeserializeObject<T>(response.Content);*/
 
