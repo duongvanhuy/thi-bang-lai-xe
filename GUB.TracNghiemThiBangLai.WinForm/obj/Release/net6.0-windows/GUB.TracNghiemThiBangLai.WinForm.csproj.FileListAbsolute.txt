@@ -75,3 +75,4 @@ D:\Workspace\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Release\net6.0
 D:\Workspace\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Release\net6.0-windows\GUB.TracNghiemThiBangLai.WinForm.pdb
 D:\Workspace\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Release\net6.0-windows\GUB.TracNghiemThiBangLai.WinForm.genruntimeconfig.cache
 D:\Workspace\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Release\net6.0-windows\ref\GUB.TracNghiemThiBangLai.WinForm.dll
+D:\Workspace\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Release\net6.0-windows\GUB.TracNghiemThiBangLai.WinForm.ExamResultForm.resources

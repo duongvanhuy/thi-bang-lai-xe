@@ -5,10 +5,7 @@ build_property.UsingMicrosoftNETSdkWeb =
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GUB.TracNghiemThiBangLai.Share
-<<<<<<< HEAD
 build_property.ProjectDir = D:\Workspace\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Share\
-=======
-build_property.ProjectDir = E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.Share\
->>>>>>> af35f20016504167c918517d509d27f730d45c49
