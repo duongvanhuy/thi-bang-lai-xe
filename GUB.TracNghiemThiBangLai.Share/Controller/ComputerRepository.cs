@@ -24,11 +24,11 @@ namespace GUB.TracNghiemThiBangLai.Share.Controller
             return data;
         }
 
-        public async Task<List<Computer>> GetComputerByNumber(int ComNumber)
+        public async Task<Computer> GetComputerByNumber(int ComNumber)
         {
             var obj = new { number = ComNumber };
-            var data = new List<Computer>();
-            data = await _service.CallAPIGet<List<Computer>>("Computer/GetComputerByNumber", obj);
+            var data = new Computer();
+            data = await _service.CallAPIGet<Computer>("Computer/GetComputerByNumber", obj);
             return data;
         }
 

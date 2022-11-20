@@ -42,19 +42,21 @@
             this.label12 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.lblCMND = new System.Windows.Forms.Label();
+            this.lblNgaySinh = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblCCCD = new System.Windows.Forms.Label();
             this.lblHoVaTen = new System.Windows.Forms.Label();
-            this.lblSBD = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnKetThuc = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblTimer = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblDiaChi = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHinhAnhCauHoi)).BeginInit();
             this.panel2.SuspendLayout();
@@ -189,13 +191,15 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel7.Controls.Add(this.lblCMND);
+            this.panel7.Controls.Add(this.lblDiaChi);
+            this.panel7.Controls.Add(this.label3);
+            this.panel7.Controls.Add(this.lblNgaySinh);
+            this.panel7.Controls.Add(this.label7);
+            this.panel7.Controls.Add(this.lblCCCD);
             this.panel7.Controls.Add(this.lblHoVaTen);
-            this.panel7.Controls.Add(this.lblSBD);
             this.panel7.Controls.Add(this.label6);
             this.panel7.Controls.Add(this.label5);
             this.panel7.Controls.Add(this.label4);
-            this.panel7.Controls.Add(this.label3);
             this.panel7.Controls.Add(this.label2);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(121, 0);
@@ -203,68 +207,59 @@
             this.panel7.Size = new System.Drawing.Size(1365, 172);
             this.panel7.TabIndex = 1;
             // 
-            // lblCMND
+            // lblNgaySinh
             // 
-            this.lblCMND.AutoSize = true;
-            this.lblCMND.Location = new System.Drawing.Point(87, 101);
-            this.lblCMND.Name = "lblCMND";
-            this.lblCMND.Size = new System.Drawing.Size(81, 20);
-            this.lblCMND.TabIndex = 7;
-            this.lblCMND.Text = "192061028";
+            this.lblNgaySinh.AutoSize = true;
+            this.lblNgaySinh.Location = new System.Drawing.Point(90, 101);
+            this.lblNgaySinh.Name = "lblNgaySinh";
+            this.lblNgaySinh.Size = new System.Drawing.Size(81, 20);
+            this.lblNgaySinh.TabIndex = 9;
+            this.lblNgaySinh.Text = "192061028";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 101);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(79, 20);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Ngày Sinh:";
+            // 
+            // lblCCCD
+            // 
+            this.lblCCCD.AutoSize = true;
+            this.lblCCCD.Location = new System.Drawing.Point(90, 72);
+            this.lblCCCD.Name = "lblCCCD";
+            this.lblCCCD.Size = new System.Drawing.Size(81, 20);
+            this.lblCCCD.TabIndex = 7;
+            this.lblCCCD.Text = "192061028";
             // 
             // lblHoVaTen
             // 
             this.lblHoVaTen.AutoSize = true;
-            this.lblHoVaTen.Location = new System.Drawing.Point(87, 69);
+            this.lblHoVaTen.Location = new System.Drawing.Point(87, 41);
             this.lblHoVaTen.Name = "lblHoVaTen";
             this.lblHoVaTen.Size = new System.Drawing.Size(102, 20);
             this.lblHoVaTen.TabIndex = 6;
             this.lblHoVaTen.Text = "Trần Vĩnh Lãm";
             // 
-            // lblSBD
-            // 
-            this.lblSBD.AutoSize = true;
-            this.lblSBD.Location = new System.Drawing.Point(87, 38);
-            this.lblSBD.Name = "lblSBD";
-            this.lblSBD.Size = new System.Drawing.Size(41, 20);
-            this.lblSBD.TabIndex = 5;
-            this.lblSBD.Text = "2002";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 101);
+            this.label6.Location = new System.Drawing.Point(6, 72);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 20);
+            this.label6.Size = new System.Drawing.Size(50, 20);
             this.label6.TabIndex = 4;
-            this.label6.Text = "CMND:";
+            this.label6.Text = "CCCD:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 69);
+            this.label5.Location = new System.Drawing.Point(3, 41);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 20);
             this.label5.TabIndex = 3;
             this.label5.Text = "Họ và Tên:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(218, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 20);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Hạng: A2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 38);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 20);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "SBD:";
             // 
             // label2
             // 
@@ -324,6 +319,33 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(218, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(70, 20);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Hạng: A2";
+            // 
+            // lblDiaChi
+            // 
+            this.lblDiaChi.AutoSize = true;
+            this.lblDiaChi.Location = new System.Drawing.Point(90, 130);
+            this.lblDiaChi.Name = "lblDiaChi";
+            this.lblDiaChi.Size = new System.Drawing.Size(81, 20);
+            this.lblDiaChi.TabIndex = 11;
+            this.lblDiaChi.Text = "192061028";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 130);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 20);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Địa Chỉ:";
+            // 
             // ExamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -361,12 +383,11 @@
         private Label lblCauTraLoi;
         private FlowLayoutPanel flpDapAn;
         private Label label12;
-        private Label lblCMND;
+        private Label lblCCCD;
         private Label lblHoVaTen;
         private Label lblSBD;
         private Label label6;
         private Label label5;
-        private Label label4;
         private Label label3;
         private PictureBox ptbHinhAnhCauHoi;
         private PictureBox pictureBox1;
@@ -376,5 +397,9 @@
         private Panel panel6;
         private Label lblTimer;
         private System.Windows.Forms.Timer timer1;
+        private Label lblNgaySinh;
+        private Label label7;
+        private Label lblDiaChi;
+        private Label label4;
     }
 }

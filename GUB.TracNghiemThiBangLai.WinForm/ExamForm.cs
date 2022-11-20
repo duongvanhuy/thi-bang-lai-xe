@@ -18,8 +18,9 @@ namespace GUB.TracNghiemThiBangLai.WinForm
     {
         QuestionRepository questionRepository;
         ComputerRepository computerRepository;
+        UserRepository userRepository;
         List<Question> questionList;
-        List<Computer> computerList;
+        Computer computer;
         User user;
         int count;
         int idComputer = 201;
@@ -29,6 +30,8 @@ namespace GUB.TracNghiemThiBangLai.WinForm
         {
             InitializeComponent();
             questionRepository = new QuestionRepository();
+            computerRepository = new ComputerRepository();
+            userRepository = new UserRepository();
             Initial();
             
         }
@@ -43,20 +46,23 @@ namespace GUB.TracNghiemThiBangLai.WinForm
             Question question = await questionRepository.GetByQuestion(questionList[0].Id);
             renderQuestion(question);
 
-            ////Lấy ra User từ mã máy tính
-            //computerList = await computerRepository.GetComputers();
-            //var CCCDUser = "";
-            //foreach (Computer computer in computerList)
-            //{
-            //    if(computer.Id == idComputer)
-            //    {
-            //        user = UserRepository.getUserByCCCD(computer.CCCD);
-            //    }
-            //}
+            //Lấy ra User từ mã máy tính
+            computer = await computerRepository.GetComputerByNumber(idComputer);
+            user = await userRepository.GetUserByCCCD(computer.CCCD);
+
+            renderUser();
 
             //Chạy thời gian
             runTime();
 
+        }
+
+        public void renderUser()
+        {
+            lblHoVaTen.Text = user.FullName;
+            lblCCCD.Text = user.CCCD;
+            lblNgaySinh.Text = user.Birthday.ToString("dd/MM/yyyy");
+            lblDiaChi.Text = user.Address;
         }
 
         
@@ -268,7 +274,7 @@ namespace GUB.TracNghiemThiBangLai.WinForm
                         }
                     }
                     var totalQuestion = questionList.Count; // 
-                    var examResultForm = new ExamResultForm(listAnswer, correctAnswer, totalQuestion);
+                    var examResultForm = new ExamResultForm(listAnswer, correctAnswer, totalQuestion, user, idComputer);
                     if (examResultForm.ShowDialog() == DialogResult.Cancel)
                     {
                         examResultForm.Close();
