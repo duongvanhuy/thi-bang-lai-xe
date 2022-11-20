@@ -10,26 +10,5 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUB.TracNghiemThiBangLai.Host\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="GUB.TracNghiemThiBangLai.Host\HomeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="GUB.TracNghiemThiBangLai.Host\HostForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="GUB.TracNghiemThiBangLai.Host\LoginForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="GUB.TracNghiemThiBangLai.WinForm\ExamForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="GUB.TracNghiemThiBangLai.WinForm\ExamResultForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="GUB.TracNghiemThiBangLai.WinForm\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
 </Project>

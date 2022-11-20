@@ -9,14 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\GUB.TracNghiemThiBangLai.API\GUB.TracNghiemThiBangLai.API.csproj" />
+    <ProjectReference Include="..\GUB.TracNghiemThiBangLai.Entities\GUB.TracNghiemThiBangLai.Entities.csproj" />
     <ProjectReference Include="..\GUB.TracNghiemThiBangLai.Share\GUB.TracNghiemThiBangLai.Share.csproj" />
   </ItemGroup>
 

@@ -73,7 +73,7 @@ namespace GUB.TracNghiemThiBangLai.API.Controllers
                 return BadRequest(e.Message);
             }
         }
-        [HttpPut]
+        [HttpPost]
         public async Task<IActionResult> UpdateUser(User user)
         {
             try
@@ -87,7 +87,7 @@ namespace GUB.TracNghiemThiBangLai.API.Controllers
                 return BadRequest(e.Message);
             }
         }
-        [HttpDelete]
+        [HttpPost]
         public async Task<IActionResult> DeleteUser(int id)
         {
             try
