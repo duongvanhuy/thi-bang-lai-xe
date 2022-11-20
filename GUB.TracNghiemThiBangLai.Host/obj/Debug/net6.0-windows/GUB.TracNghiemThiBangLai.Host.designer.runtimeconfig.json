@@ -12,13 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-<<<<<<< HEAD
-      "C:\\Users\\LENOVO\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\LENOVO\\.nuget\\packages"
-=======
       "C:\\Users\\dell\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\dell\\.nuget\\packages"
->>>>>>> af35f20016504167c918517d509d27f730d45c49
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,

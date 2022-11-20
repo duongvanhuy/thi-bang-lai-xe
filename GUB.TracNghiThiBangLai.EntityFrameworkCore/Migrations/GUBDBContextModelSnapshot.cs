@@ -149,6 +149,39 @@ namespace GUB.TracNghiThiBangLai.EntityFrameworkCore.Migrations
                     b.ToTable("Questions");
                 });
 
+            modelBuilder.Entity("GUB.TracNghiemThiBangLai.Entities.ResultExam", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("CMND")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ComputerNum")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("NumberOfCorrect")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ResultExams");
+                });
+
             modelBuilder.Entity("GUB.TracNghiemThiBangLai.Entities.Role", b =>
                 {
                     b.Property<int>("Id")

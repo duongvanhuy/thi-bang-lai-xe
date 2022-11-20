@@ -31,6 +31,14 @@ namespace GUB.TracNghiemThiBangLai.Share.Controller
             return data;
         }
 
+        public async Task<User> GetUserByCCCD(string CCCD)
+        {
+            var idObject = new { CCCD = CCCD };
+            var data = new User();
+            data = await _service.CallAPIGet<User>("User/GetUserByCCCD", idObject);
+            return data;
+        }
+
         public async Task<User> AddUser(User user)
         {
             var data = new User();
