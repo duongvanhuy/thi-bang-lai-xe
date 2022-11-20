@@ -197,7 +197,7 @@ namespace GUB.TracNghiemThiBangLai.Host
 
                             var userUpdate = await userRepository.UpdateUser(userRow);
                             //update thành công
-                            if (userUpdate != null)
+                            if (userUpdate != null && userUpdate.Id != null)
                             {
                                 MessageBox.Show("update user thành công", "Thông báo",
                                  MessageBoxButtons.OK);
