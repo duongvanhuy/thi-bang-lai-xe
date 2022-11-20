@@ -31,8 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExamForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ptbHinhAnhCauHoi = new System.Windows.Forms.PictureBox();
             this.lblCauTraLoi = new System.Windows.Forms.Label();
+            this.ptbHinhAnhCauHoi = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblCauHoi = new System.Windows.Forms.Label();
             this.flpDapAn = new System.Windows.Forms.FlowLayoutPanel();
@@ -77,33 +77,33 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1492, 673);
+            this.panel1.Size = new System.Drawing.Size(1492, 645);
             this.panel1.TabIndex = 0;
-            // 
-            // ptbHinhAnhCauHoi
-            // 
-            this.ptbHinhAnhCauHoi.Location = new System.Drawing.Point(122, 130);
-            this.ptbHinhAnhCauHoi.Name = "ptbHinhAnhCauHoi";
-            this.ptbHinhAnhCauHoi.Size = new System.Drawing.Size(1366, 147);
-            this.ptbHinhAnhCauHoi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.ptbHinhAnhCauHoi.TabIndex = 4;
-            this.ptbHinhAnhCauHoi.TabStop = false;
             // 
             // lblCauTraLoi
             // 
             this.lblCauTraLoi.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblCauTraLoi.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCauTraLoi.Location = new System.Drawing.Point(122, 277);
+            this.lblCauTraLoi.Location = new System.Drawing.Point(122, 330);
             this.lblCauTraLoi.Name = "lblCauTraLoi";
-            this.lblCauTraLoi.Size = new System.Drawing.Size(1366, 392);
+            this.lblCauTraLoi.Size = new System.Drawing.Size(1366, 311);
             this.lblCauTraLoi.TabIndex = 3;
+            // 
+            // ptbHinhAnhCauHoi
+            // 
+            this.ptbHinhAnhCauHoi.Location = new System.Drawing.Point(121, 213);
+            this.ptbHinhAnhCauHoi.Name = "ptbHinhAnhCauHoi";
+            this.ptbHinhAnhCauHoi.Size = new System.Drawing.Size(1366, 114);
+            this.ptbHinhAnhCauHoi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.ptbHinhAnhCauHoi.TabIndex = 4;
+            this.ptbHinhAnhCauHoi.TabStop = false;
             // 
             // panel6
             // 
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel6.Location = new System.Drawing.Point(0, 130);
+            this.panel6.Location = new System.Drawing.Point(0, 213);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(122, 539);
+            this.panel6.Size = new System.Drawing.Size(122, 428);
             this.panel6.TabIndex = 5;
             // 
             // lblCauHoi
@@ -114,7 +114,7 @@
             this.lblCauHoi.Location = new System.Drawing.Point(0, 0);
             this.lblCauHoi.Name = "lblCauHoi";
             this.lblCauHoi.Padding = new System.Windows.Forms.Padding(40, 0, 40, 0);
-            this.lblCauHoi.Size = new System.Drawing.Size(1488, 130);
+            this.lblCauHoi.Size = new System.Drawing.Size(1488, 213);
             this.lblCauHoi.TabIndex = 1;
             this.lblCauHoi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -134,9 +134,9 @@
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 673);
+            this.panel2.Location = new System.Drawing.Point(0, 645);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1492, 150);
+            this.panel2.Size = new System.Drawing.Size(1492, 178);
             this.panel2.TabIndex = 1;
             // 
             // panel5
@@ -148,14 +148,14 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel5.Location = new System.Drawing.Point(1149, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(339, 146);
+            this.panel5.Size = new System.Drawing.Size(339, 174);
             this.panel5.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 35);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 63);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(337, 109);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -170,7 +170,7 @@
             this.label12.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label12.Location = new System.Drawing.Point(0, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(337, 144);
+            this.label12.Size = new System.Drawing.Size(337, 172);
             this.label12.TabIndex = 0;
             this.label12.Text = "BỘ 600 CÂU HỎI ";
             this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -183,7 +183,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1488, 146);
+            this.panel4.Size = new System.Drawing.Size(1488, 174);
             this.panel4.TabIndex = 0;
             // 
             // panel7
@@ -200,7 +200,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(121, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1365, 144);
+            this.panel7.Size = new System.Drawing.Size(1365, 172);
             this.panel7.TabIndex = 1;
             // 
             // lblCMND
@@ -281,7 +281,7 @@
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(121, 144);
+            this.pictureBox2.Size = new System.Drawing.Size(121, 172);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 

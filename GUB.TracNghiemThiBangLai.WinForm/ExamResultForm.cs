@@ -13,22 +13,22 @@ namespace GUB.TracNghiemThiBangLai.WinForm
 {
     public partial class ExamResultForm : Form
     {
-        public ExamResultForm(List<Answer> listAnswer, int correctAnswer)
+        public ExamResultForm(List<Answer> listAnswer, int correctAnswer, int totalQuestion)
         {
             InitializeComponent();
-            halderResult(listAnswer, correctAnswer);
+            halderResult(listAnswer, correctAnswer, totalQuestion);
         }
 
-        public void halderResult(List<Answer> listAnswer, int correctAnswer)
+        public void halderResult(List<Answer> listAnswer, int correctAnswer, int totalQuestion)
         {
-            var noAnswer = 25 - listAnswer.Count;
-            var wrongAnswer = 25 - noAnswer - correctAnswer;
+            var noAnswer = totalQuestion - listAnswer.Count;
+            var wrongAnswer = totalQuestion - noAnswer - correctAnswer;
 
             lblSai.Text = wrongAnswer.ToString();
             lblDung.Text = correctAnswer.ToString();
             lblChua.Text = noAnswer.ToString();
 
-            if(correctAnswer >= 22)
+            if(correctAnswer >= 21)
             {
                 lblKetQua.Text = "Đạt";
             } else

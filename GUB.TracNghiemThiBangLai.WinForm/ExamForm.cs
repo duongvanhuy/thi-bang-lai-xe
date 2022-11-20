@@ -17,9 +17,12 @@ namespace GUB.TracNghiemThiBangLai.WinForm
     public partial class ExamForm : Form
     {
         QuestionRepository questionRepository;
+        ComputerRepository computerRepository;
         List<Question> questionList;
+        List<Computer> computerList;
+        User user;
         int count;
-
+        int idComputer = 201;
        
 
         public ExamForm()
@@ -39,6 +42,17 @@ namespace GUB.TracNghiemThiBangLai.WinForm
             //Hiển thị câu hỏi đầu tiên của list
             Question question = await questionRepository.GetByQuestion(questionList[0].Id);
             renderQuestion(question);
+
+            ////Lấy ra User từ mã máy tính
+            //computerList = await computerRepository.GetComputers();
+            //var CCCDUser = "";
+            //foreach (Computer computer in computerList)
+            //{
+            //    if(computer.Id == idComputer)
+            //    {
+            //        user = UserRepository.getUserByCCCD(computer.CCCD);
+            //    }
+            //}
 
             //Chạy thời gian
             runTime();
@@ -236,7 +250,7 @@ namespace GUB.TracNghiemThiBangLai.WinForm
                         }
                     }
                 }
-                if (count != 0 && listAnswer.Count < 25) //Làm chưa đủ 25 câu
+                if (count != 0 && listAnswer.Count < questionList.Count) //Làm chưa đủ 25 câu
                 {
                     MessageBox.Show("Bạn chưa hoàn thành tất cả các câu hỏi");
                 }
@@ -253,7 +267,8 @@ namespace GUB.TracNghiemThiBangLai.WinForm
                             correctAnswer++;
                         }
                     }
-                    var examResultForm = new ExamResultForm(listAnswer, correctAnswer);
+                    var totalQuestion = questionList.Count; // 
+                    var examResultForm = new ExamResultForm(listAnswer, correctAnswer, totalQuestion);
                     if (examResultForm.ShowDialog() == DialogResult.Cancel)
                     {
                         examResultForm.Close();
