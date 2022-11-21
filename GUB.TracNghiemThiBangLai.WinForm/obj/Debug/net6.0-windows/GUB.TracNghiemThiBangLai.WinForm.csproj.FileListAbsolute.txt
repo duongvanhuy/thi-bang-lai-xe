@@ -1,0 +1,10 @@
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.WinForm.csproj.AssemblyReference.cache
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.WinForm.ExamForm.resources
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.WinForm.ExamResultForm.resources
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.WinForm.Form1.resources
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.WinForm.Properties.Resources.resources
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.WinForm.csproj.GenerateResource.cache
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.WinForm.GeneratedMSBuildEditorConfig.editorconfig
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.WinForm.AssemblyInfoInputs.cache
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.WinForm.AssemblyInfo.cs
+E:\MonHoc-PXU\nam3\winform\thi-bang-lai-xe\GUB.TracNghiemThiBangLai.WinForm\obj\Debug\net6.0-windows\GUB.TracNghiemThiBangLai.WinForm.csproj.CoreCompileInputs.cache

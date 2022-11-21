@@ -193,7 +193,7 @@ namespace GUB.TracNghiemThiBangLai.Host
                             {
 
                                 dataTable.Rows[i].Cells[dataTable.Columns.Count - 1].Value = computers[count].NumberCom.ToString();
-                                dataTable.Rows[i].Cells[dataTable.Columns.Count - 4].Value = 1;
+                               /* dataTable.Rows[i].Cells[dataTable.Columns.Count - 4].Value = 1;*/
                                 listCCCDMemory.Add(dataTable.Rows[i].Cells[3].Value.ToString());
 
                                 // lưu tạm danh sách người thi tương ứng với máy thi vào CSDL
@@ -240,7 +240,7 @@ namespace GUB.TracNghiemThiBangLai.Host
 
 
                                 dataTable.Rows[i].Cells[dataTable.Columns.Count - 2].Value = computers[count].NumberCom.ToString();
-                                dataTable.Rows[i].Cells[dataTable.Columns.Count - 5].Value = 1;
+                                //dataTable.Rows[i].Cells[dataTable.Columns.Count - 5].Value = 1;
                                 listCCCDMemory.Add(dataTable.Rows[i].Cells[3].Value.ToString());
 
                                 // lưu tạm danh sách người thi tương ứng với máy thi vào CSDL
@@ -339,8 +339,6 @@ namespace GUB.TracNghiemThiBangLai.Host
             //     workbook.Save(saveFileDialog.FileName);
             // }
 
-
-
             var workbook = new ExcelFile();
             var worksheet = workbook.Worksheets.Add("Sheet1");
             DataGridViewConverter.ImportFromDataGridView(
@@ -348,9 +346,6 @@ namespace GUB.TracNghiemThiBangLai.Host
              this.dataTable,
              new ImportFromDataGridViewOptions() { ColumnHeaders = true });
             workbook.Save(pathFileExcel);
-
-
-
         }
 
         // bắt đầu bài thi
@@ -435,17 +430,19 @@ namespace GUB.TracNghiemThiBangLai.Host
                         {
 
                             dataTable.Rows[j].Cells[dataTable.Columns.Count - 4].Value = listResultExam[i].NumberOfCorrect;
-                            if (listResultExam[i].NumberOfCorrect >= 16)
-                            {
+                            dataTable.Rows[i].Cells[dataTable.Columns.Count - 5].Value = 1;
+                            //if (listResultExam[i].NumberOfCorrect >= 16)
+                            //{
 
-                                dataTable.Rows[j].Cells[dataTable.Columns.Count - 1].Value = "Đạt";
+                            //    dataTable.Rows[j].Cells[dataTable.Columns.Count - 1].Value = "Đạt";
 
-                            }
-                            else
-                            {
-                                dataTable.Rows[j].Cells[dataTable.Columns.Count - 1].Value = "Không đạt";
+                            //}
+                            //else
+                            //{
+                            //    dataTable.Rows[j].Cells[dataTable.Columns.Count - 1].Value = "Không đạt";
 
-                            }
+                            //}
+                            dataTable.Rows[j].Cells[dataTable.Columns.Count - 1].Value = listResultExam[i].Status;
                         }
                     }
                 }
@@ -486,17 +483,20 @@ namespace GUB.TracNghiemThiBangLai.Host
 
 
                         dataTable.Rows[j].Cells[dataTable.Columns.Count - 4].Value = listResultExam[i].NumberOfCorrect;
-                        if (listResultExam[i].NumberOfCorrect >= 16)
-                        {
+                        dataTable.Rows[j].Cells[dataTable.Columns.Count - 5].Value = 1;
+                        //if (listResultExam[i].NumberOfCorrect >= 16)
+                        //{
 
-                            dataTable.Rows[j].Cells[dataTable.Columns.Count - 1].Value = "Đạt";
+                        //    dataTable.Rows[j].Cells[dataTable.Columns.Count - 1].Value = "Đạt";
 
-                        }
-                        else
-                        {
-                            dataTable.Rows[j].Cells[dataTable.Columns.Count - 1].Value = "Không đạt";
 
-                        }
+                        //}
+                        //else
+                        //{
+                        //    dataTable.Rows[j].Cells[dataTable.Columns.Count - 1].Value = "Không đạt";
+
+                        //}
+                        dataTable.Rows[j].Cells[dataTable.Columns.Count - 1].Value = listResultExam[i].Status;
                         count++;
                         isHeader = true;
 

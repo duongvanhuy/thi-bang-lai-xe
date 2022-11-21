@@ -18,6 +18,20 @@ builder.Services.AddDbContext<GUBDBContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("GUBTracNghiemLaiXe")));
 
 builder.Services.AddAutoMapper(typeof(AccountProfile));
+/*builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: "MyPolicy",
+                policy =>
+                {
+                    policy.WithOrigins(
+                        "http://0.0.0.0:5233",
+                       
+                        "http://localhost:*",
+                        "*"
+                        ).AllowAnyHeader().AllowAnyMethod();
+
+                });
+});*/
 
 var app = builder.Build();
 
@@ -28,10 +42,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
 app.UseHttpsRedirection();
 
+/*app.UseCors("MyPolicy");*/
 app.UseAuthorization();
 
 app.MapControllers();
-
 app.Run();

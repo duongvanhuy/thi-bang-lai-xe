@@ -12,6 +12,7 @@ namespace GUB.TracNghiemThiBangLai.Share.Service
 {
     public  class ServiceBase 
     {
+
         private readonly RestClient _client;
         private static readonly string _baseUrl = "https://localhost:7233/api/";
 

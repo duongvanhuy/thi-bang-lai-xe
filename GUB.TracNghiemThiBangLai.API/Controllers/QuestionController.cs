@@ -1,10 +1,12 @@
 ﻿using GUB.TracNghiemThiBangLai.Entities;
 using GUB.TracNghiThiBangLai.EntityFrameworkCore.Data;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace GUB.TracNghiemThiBangLai.API.Controllers
 {
+    [EnableCors("MyPolicy")]
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class QuestionController : ControllerBase
@@ -15,7 +17,9 @@ namespace GUB.TracNghiemThiBangLai.API.Controllers
         {
             _context = context;
         }
+        [DisableCors]
         [HttpGet]
+        
         public async Task<IActionResult> GetAllQuestion()
         {
             try
