@@ -28,6 +28,7 @@ namespace GUB.TracNghiemThiBangLai.Host
         ComputerRepository computerRepository = new ComputerRepository();
         ResultExamRepository resultExamRepository = new ResultExamRepository();
         UserRepository userRepository = new UserRepository();
+        AppSettingRepository appSettingRepository = new AppSettingRepository();
         int ExamTime = 0;
 
 
@@ -352,11 +353,16 @@ namespace GUB.TracNghiemThiBangLai.Host
         }
 
         // bắt đầu bài thi
-        private void button3_Click(object sender, EventArgs e)
+        private async void button3_Click(object sender, EventArgs e)
         {
             ExamTime = AppSetting.ExamTime;
             timer1.Start();
-
+            AppSettingEntities appSettingEntities = new AppSettingEntities()
+            {
+                Key = 0,
+                valueKey = 1
+            };
+            await appSettingRepository.UpdateAppSettingKey(appSettingEntities);
             lblSoNguoiDangThi.Text = listCCCDMemory.Count.ToString();
 
 
