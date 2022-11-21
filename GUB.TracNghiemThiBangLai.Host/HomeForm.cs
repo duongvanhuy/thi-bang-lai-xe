@@ -406,7 +406,12 @@ namespace GUB.TracNghiemThiBangLai.Host
                 lblSoNguoiThiXong.Text = listCCCDMemory.Count.ToString();
                 lblSoNguoiDangThi.Text = "0";
 
-
+                AppSettingEntities appSettingEntities = new AppSettingEntities()
+                {
+                    Key = 0,
+                    valueKey = 0
+                };
+                await appSettingRepository.UpdateAppSettingKey(appSettingEntities);
 
             }
 

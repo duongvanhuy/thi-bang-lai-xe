@@ -63,8 +63,9 @@ namespace GUB.TracNghiemThiBangLai.Share.Controller
 
         public async Task<List<User>> SearchUser(string name)
         {
+            var idObject = new { name = name };
             var data = new List<User>();
-            data = await _service.CallAPIGet<List<User>>("User/SearchUser", name);
+            data = await _service.CallAPIGet<List<User>>("User/SearchUser", idObject);
             return data;
         }
 

@@ -45,15 +45,31 @@ namespace GUB.TracNghiemThiBangLai.Host
             renderUserInfo();
         }
 
+<<<<<<< HEAD
 
+=======
+     //search
+>>>>>>> e0544621da671134faa06fd4b5fbfac65569f8cd
         private async void txtSearchName(object sender, KeyPressEventArgs e)
         {
+          
             if (e.KeyChar == 13)
             {
+<<<<<<< HEAD
 
                 var userSearchs = await userRepository.SearchUser(txtCountUser.Text);
                 renderDataUser(userSearchs);
                 txtCountUser.Text = userSearchs == null ? "0" : userSearchs.Count.ToString();
+=======
+               
+                var userSearchs = await userRepository.SearchUser(txtSearch.Text);
+                if (userSearchs != null)
+                {
+                    renderDataUser(userSearchs);
+                }
+               
+                txtCountUser.Text = userSearchs == null? "0" : userSearchs.Count.ToString();
+>>>>>>> e0544621da671134faa06fd4b5fbfac65569f8cd
             }
         }
 

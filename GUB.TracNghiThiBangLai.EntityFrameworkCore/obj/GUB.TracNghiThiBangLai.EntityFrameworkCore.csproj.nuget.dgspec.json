@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj": {}
   },
   "projects": {
@@ -12,13 +13,30 @@
         "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
         "outputPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\obj\\",
+=======
+    "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj": {}
+  },
+  "projects": {
+    "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj",
+        "projectName": "GUB.TracNghiemThiBangLai.Entities",
+        "projectPath": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\obj\\",
+>>>>>>> e0544621da671134faa06fd4b5fbfac65569f8cd
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+=======
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> e0544621da671134faa06fd4b5fbfac65569f8cd
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,6 +83,7 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
@@ -77,13 +96,31 @@
         "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
         "outputPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\obj\\",
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj",
+        "projectName": "GUB.TracNghiThiBangLai.EntityFrameworkCore",
+        "projectPath": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\GUB.TracNghiThiBangLai.EntityFrameworkCore.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiThiBangLai.EntityFrameworkCore\\obj\\",
+>>>>>>> e0544621da671134faa06fd4b5fbfac65569f8cd
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+=======
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> e0544621da671134faa06fd4b5fbfac65569f8cd
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,8 +134,13 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+<<<<<<< HEAD
               "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj": {
                 "projectPath": "D:\\Study\\DHPhuXuan\\Nam3\\HK-Fall\\CSharp\\DoAn\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj"
+=======
+              "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj": {
+                "projectPath": "D:\\Workspace\\thi-bang-lai-xe\\GUB.TracNghiemThiBangLai.Entities\\GUB.TracNghiemThiBangLai.Entities.csproj"
+>>>>>>> e0544621da671134faa06fd4b5fbfac65569f8cd
               }
             }
           }
@@ -150,7 +192,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+>>>>>>> e0544621da671134faa06fd4b5fbfac65569f8cd
         }
       }
     }
