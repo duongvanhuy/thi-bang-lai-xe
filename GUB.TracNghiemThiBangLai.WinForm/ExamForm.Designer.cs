@@ -42,21 +42,21 @@
             this.label12 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.lblDiaChi = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.lblNgaySinh = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.lblCCCD = new System.Windows.Forms.Label();
             this.lblHoVaTen = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnKetThuc = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblTimer = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblDiaChi = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHinhAnhCauHoi)).BeginInit();
             this.panel2.SuspendLayout();
@@ -79,23 +79,23 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1492, 645);
+            this.panel1.Size = new System.Drawing.Size(1492, 754);
             this.panel1.TabIndex = 0;
             // 
             // lblCauTraLoi
             // 
             this.lblCauTraLoi.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblCauTraLoi.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCauTraLoi.Location = new System.Drawing.Point(122, 330);
+            this.lblCauTraLoi.Location = new System.Drawing.Point(122, 433);
             this.lblCauTraLoi.Name = "lblCauTraLoi";
-            this.lblCauTraLoi.Size = new System.Drawing.Size(1366, 311);
+            this.lblCauTraLoi.Size = new System.Drawing.Size(1366, 317);
             this.lblCauTraLoi.TabIndex = 3;
             // 
             // ptbHinhAnhCauHoi
             // 
             this.ptbHinhAnhCauHoi.Location = new System.Drawing.Point(121, 213);
             this.ptbHinhAnhCauHoi.Name = "ptbHinhAnhCauHoi";
-            this.ptbHinhAnhCauHoi.Size = new System.Drawing.Size(1366, 114);
+            this.ptbHinhAnhCauHoi.Size = new System.Drawing.Size(1366, 217);
             this.ptbHinhAnhCauHoi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ptbHinhAnhCauHoi.TabIndex = 4;
             this.ptbHinhAnhCauHoi.TabStop = false;
@@ -105,7 +105,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel6.Location = new System.Drawing.Point(0, 213);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(122, 428);
+            this.panel6.Size = new System.Drawing.Size(122, 537);
             this.panel6.TabIndex = 5;
             // 
             // lblCauHoi
@@ -126,7 +126,7 @@
             this.flpDapAn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpDapAn.Location = new System.Drawing.Point(0, 77);
             this.flpDapAn.Name = "flpDapAn";
-            this.flpDapAn.Size = new System.Drawing.Size(315, 710);
+            this.flpDapAn.Size = new System.Drawing.Size(315, 819);
             this.flpDapAn.TabIndex = 2;
             this.flpDapAn.Paint += new System.Windows.Forms.PaintEventHandler(this.flpDapAn_Paint);
             // 
@@ -136,7 +136,7 @@
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 645);
+            this.panel2.Location = new System.Drawing.Point(0, 754);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1492, 178);
             this.panel2.TabIndex = 1;
@@ -207,6 +207,24 @@
             this.panel7.Size = new System.Drawing.Size(1365, 172);
             this.panel7.TabIndex = 1;
             // 
+            // lblDiaChi
+            // 
+            this.lblDiaChi.AutoSize = true;
+            this.lblDiaChi.Location = new System.Drawing.Point(90, 130);
+            this.lblDiaChi.Name = "lblDiaChi";
+            this.lblDiaChi.Size = new System.Drawing.Size(81, 20);
+            this.lblDiaChi.TabIndex = 11;
+            this.lblDiaChi.Text = "192061028";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 130);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 20);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Địa Chỉ:";
+            // 
             // lblNgaySinh
             // 
             this.lblNgaySinh.AutoSize = true;
@@ -261,6 +279,15 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "Họ và Tên:";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(218, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(70, 20);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Hạng: A2";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -283,7 +310,7 @@
             // btnKetThuc
             // 
             this.btnKetThuc.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnKetThuc.Location = new System.Drawing.Point(0, 787);
+            this.btnKetThuc.Location = new System.Drawing.Point(0, 896);
             this.btnKetThuc.Name = "btnKetThuc";
             this.btnKetThuc.Size = new System.Drawing.Size(315, 36);
             this.btnKetThuc.TabIndex = 6;
@@ -299,7 +326,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(1492, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(315, 823);
+            this.panel3.Size = new System.Drawing.Size(315, 932);
             this.panel3.TabIndex = 7;
             // 
             // lblTimer
@@ -319,38 +346,11 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(218, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 20);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Hạng: A2";
-            // 
-            // lblDiaChi
-            // 
-            this.lblDiaChi.AutoSize = true;
-            this.lblDiaChi.Location = new System.Drawing.Point(90, 130);
-            this.lblDiaChi.Name = "lblDiaChi";
-            this.lblDiaChi.Size = new System.Drawing.Size(81, 20);
-            this.lblDiaChi.TabIndex = 11;
-            this.lblDiaChi.Text = "192061028";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 130);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 20);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Địa Chỉ:";
-            // 
             // ExamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1807, 823);
+            this.ClientSize = new System.Drawing.Size(1807, 932);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
