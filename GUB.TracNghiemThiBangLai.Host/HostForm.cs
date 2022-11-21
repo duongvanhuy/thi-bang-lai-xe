@@ -80,44 +80,44 @@ namespace GUB.TracNghiemThiBangLai.Host
         }
 
         //Xóa user
-        private async void button2_Click(object sender, EventArgs e)
-        {
-            if (dgvUser.SelectedRows.Count > 0)
-            {
-                var confirm = MessageBox.Show("Bạn có chắc là muốn xoá user này không?", "Chú ý",
-                    MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-                if (confirm == DialogResult.OK)
-                {
-                    var userRow = dgvUser.SelectedRows[0].DataBoundItem as User;
-                    if (userRow != null)
-                    {
-                            //User userDeleted = new User();
-                        User userDeleted = await userRepository.DeleteUser(userRow.Id);
+        //private async void button2_Click(object sender, EventArgs e)
+        //{
+        //    if (dgvUser.SelectedRows.Count > 0)
+        //    {
+        //        var confirm = MessageBox.Show("Bạn có chắc là muốn xoá user này không?", "Chú ý",
+        //            MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+        //        if (confirm == DialogResult.OK)
+        //        {
+        //            var userRow = dgvUser.SelectedRows[0].DataBoundItem as User;
+        //            if (userRow != null)
+        //            {
+        //                    //User userDeleted = new User();
+        //                User userDeleted = await userRepository.DeleteUser(userRow.Id);
 
                      
-                        //Xóa thành công
-                        if (userDeleted != null)
-                        {
-                            MessageBox.Show("Xoá user thành công", "Thông báo",
-                             MessageBoxButtons.OK);
-                            Initial();
-                        }
-                        else
-                            MessageBox.Show("Xóa không thành công", "Thông báo",
-                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //                //Xóa thành công
+        //                if (userDeleted != null)
+        //                {
+        //                    MessageBox.Show("Xoá user thành công", "Thông báo",
+        //                     MessageBoxButtons.OK);
+        //                    Initial();
+        //                }
+        //                else
+        //                    MessageBox.Show("Xóa không thành công", "Thông báo",
+        //                         MessageBoxButtons.OK, MessageBoxIcon.Error);
 
 
 
-                    }
-                    else
-                    {
-                        MessageBox.Show("Vui lòng chọn đúng dữ liệu", "Thông báo",
-                                    MessageBoxButtons.OK);
-                    }
-                }
+        //            }
+        //            else
+        //            {
+        //                MessageBox.Show("Vui lòng chọn đúng dữ liệu", "Thông báo",
+        //                            MessageBoxButtons.OK);
+        //            }
+        //        }
 
-            }
-        }
+        //    }
+        //}
 
         //click add user
         private void button1_Click(object sender, EventArgs e)
@@ -133,44 +133,44 @@ namespace GUB.TracNghiemThiBangLai.Host
         }
 
         //reset mk
-        private async void button3_Click(object sender, EventArgs e)
-        {
-            if (dgvUser.SelectedRows.Count > 0)
-            {
-                var confirm = MessageBox.Show("Bạn có chắc là muốn reset mật khẩu user này không?", "Chú ý",
-                    MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-                if (confirm == DialogResult.OK)
-                {
-                    var userRow = dgvUser.SelectedRows[0].DataBoundItem as User;
-                    if (userRow != null)
-                    {
+        //private async void button3_Click(object sender, EventArgs e)
+        //{
+        //    if (dgvUser.SelectedRows.Count > 0)
+        //    {
+        //        var confirm = MessageBox.Show("Bạn có chắc là muốn reset mật khẩu user này không?", "Chú ý",
+        //            MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+        //        if (confirm == DialogResult.OK)
+        //        {
+        //            var userRow = dgvUser.SelectedRows[0].DataBoundItem as User;
+        //            if (userRow != null)
+        //            {
 
-                        var userReset = await userRepository.ResetPassword(userRow.Id);
-                        //Reset thành công
-                        if (userReset != null)
-                        {
-                            MessageBox.Show("reser mật khẩu thành công", "Thông báo",
-                             MessageBoxButtons.OK);
-                            Initial();
-                        }
-                        else {
-                            MessageBox.Show("Reset mật khẩu không thành công", "Thông báo",
-                                   MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
+        //                var userReset = await userRepository.ResetPassword(userRow.Id);
+        //                //Reset thành công
+        //                if (userReset != null)
+        //                {
+        //                    MessageBox.Show("reser mật khẩu thành công", "Thông báo",
+        //                     MessageBoxButtons.OK);
+        //                    Initial();
+        //                }
+        //                else {
+        //                    MessageBox.Show("Reset mật khẩu không thành công", "Thông báo",
+        //                           MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //                }
                           
 
 
 
-                    }
-                    else
-                    {
-                        MessageBox.Show("Vui lòng chọn đúng dữ liệu", "Thông báo",
-                                    MessageBoxButtons.OK);
-                    }
-                }
+        //            }
+        //            else
+        //            {
+        //                MessageBox.Show("Vui lòng chọn đúng dữ liệu", "Thông báo",
+        //                            MessageBoxButtons.OK);
+        //            }
+        //        }
 
-            }
-        }
+        //    }
+        //}
 
         //save
         private async void button4_Click(object sender, EventArgs e)
