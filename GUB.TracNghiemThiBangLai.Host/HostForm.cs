@@ -45,14 +45,19 @@ namespace GUB.TracNghiemThiBangLai.Host
             renderUserInfo();
         }
 
-     
+     //search
         private async void txtSearchName(object sender, KeyPressEventArgs e)
         {
+          
             if (e.KeyChar == 13)
             {
-                
-               var userSearchs = await userRepository.SearchUser(txtCountUser.Text);
-                renderDataUser(userSearchs);
+               
+                var userSearchs = await userRepository.SearchUser(txtSearch.Text);
+                if (userSearchs != null)
+                {
+                    renderDataUser(userSearchs);
+                }
+               
                 txtCountUser.Text = userSearchs == null? "0" : userSearchs.Count.ToString();
             }
         }
