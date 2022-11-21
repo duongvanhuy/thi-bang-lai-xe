@@ -19,7 +19,7 @@ namespace GUB.TracNghiemThiBangLai.Host
 {
     public partial class HostForm : Form
     {
-        UserRepository userRepository ;
+        UserRepository userRepository;
         //Task<List<User>> users ;
 
         public HostForm()
@@ -27,33 +27,33 @@ namespace GUB.TracNghiemThiBangLai.Host
             InitializeComponent();
             userRepository = new UserRepository();
             Initial();
-          
+
         }
 
         public async void Initial()
         {
-           
-           var listUsers = await userRepository.GetUsers();
+
+            var listUsers = await userRepository.GetUsers();
             renderDataUser(listUsers);
 
         }
         private void renderDataUser(List<User> listUsers)
         {
-           userBindingSource1.DataSource = listUsers;
+            userBindingSource1.DataSource = listUsers;
             dgvUser.DataSource = userBindingSource1;
-            txtCountUser.Text = listUsers == null? "0": listUsers.Count.ToString();
+            txtCountUser.Text = listUsers == null ? "0" : listUsers.Count.ToString();
             renderUserInfo();
         }
 
-     
+
         private async void txtSearchName(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 13)
             {
-                
-               var userSearchs = await userRepository.SearchUser(txtCountUser.Text);
+
+                var userSearchs = await userRepository.SearchUser(txtCountUser.Text);
                 renderDataUser(userSearchs);
-                txtCountUser.Text = userSearchs == null? "0" : userSearchs.Count.ToString();
+                txtCountUser.Text = userSearchs == null ? "0" : userSearchs.Count.ToString();
             }
         }
 
@@ -70,7 +70,7 @@ namespace GUB.TracNghiemThiBangLai.Host
 
 
 
-  
+
 
         //render data when click
         private void cellClick(object sender, DataGridViewCellEventArgs e)
@@ -94,7 +94,7 @@ namespace GUB.TracNghiemThiBangLai.Host
         //                    //User userDeleted = new User();
         //                User userDeleted = await userRepository.DeleteUser(userRow.Id);
 
-                     
+
         //                //Xóa thành công
         //                if (userDeleted != null)
         //                {
@@ -157,7 +157,7 @@ namespace GUB.TracNghiemThiBangLai.Host
         //                    MessageBox.Show("Reset mật khẩu không thành công", "Thông báo",
         //                           MessageBoxButtons.OK, MessageBoxIcon.Error);
         //                }
-                          
+
 
 
 
@@ -178,7 +178,7 @@ namespace GUB.TracNghiemThiBangLai.Host
             //edit user
             if (dgvUser.SelectedRows.Count > 0)
             {
-                
+
                 var confirm = MessageBox.Show("Bạn có chắc là muốn sửa thông tin user này không?", "Chú ý",
                     MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 if (confirm == DialogResult.OK)
@@ -208,7 +208,7 @@ namespace GUB.TracNghiemThiBangLai.Host
                                 MessageBox.Show("Sửa thông tin không thành công", "Thông báo",
                                      MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
-   
+
                         }
                     }
                     else
@@ -218,8 +218,9 @@ namespace GUB.TracNghiemThiBangLai.Host
                     }
                 }
 
-            //thêm mới user
-            } else
+                //thêm mới user
+            }
+            else
             {
                 if (validateForm())
                 {
@@ -244,7 +245,7 @@ namespace GUB.TracNghiemThiBangLai.Host
                         MessageBox.Show("Thêm mới không thành công", "Thông báo",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                       
+
 
                 }
 
@@ -262,7 +263,7 @@ namespace GUB.TracNghiemThiBangLai.Host
         private Boolean validateForm()
         {
             Boolean result = true;
-            if(txtName.Text == "" || txtName.Text.Trim() == "")
+            if (txtName.Text == "" || txtName.Text.Trim() == "")
             {
                 result = false;
                 txtMessName.Text = "Tên không được để trống!!";
@@ -299,6 +300,6 @@ namespace GUB.TracNghiemThiBangLai.Host
             clearMessageError();
         }
 
-       
+
     }
 }

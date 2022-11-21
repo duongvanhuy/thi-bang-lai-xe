@@ -1,6 +1,7 @@
 ﻿using GUB.TracNghiemThiBangLai.Entities;
 using GUB.TracNghiemThiBangLai.Share.Controller;
 using GUB.TracNghiemThiBangLai.Share.Model;
+using GUB.TracNghiemThiBangLai.Share.Resources;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -35,17 +36,19 @@ namespace GUB.TracNghiemThiBangLai.WinForm
             computerRepository = new ComputerRepository();
             userRepository = new UserRepository();
             appSettingRepository = new AppSettingRepository();
-            
 
+            timer2.Start();
         }
 
 
         //Fake realtime
         public async void timerStart()
         {
-            appSettingEntities = await appSettingRepository.GetAppSettingKey(0);
+            appSettingEntities = await appSettingRepository.GetAppSettingKey(1);
             if (appSettingEntities.valueKey == 1)
             {
+                timer2.Stop();
+                MessageBox.Show("Bắt đầu thi");
                 Initial();
             }
         }
@@ -305,7 +308,7 @@ namespace GUB.TracNghiemThiBangLai.WinForm
         // Hàm khởi chạy timer
         public void runTime()
         {
-            count = 20; //Set up thời gian chạy
+            count = AppSetting.ExamTime; //Set up thời gian chạy
             timer1.Start();
         }
 
@@ -320,7 +323,7 @@ namespace GUB.TracNghiemThiBangLai.WinForm
         private void timer1_Tick(object sender, EventArgs e)
         {
             count--;
-            timerStart(); //Qua mỗi giây thì gọi lại xem host nhấn bắt đầu chưa
+            
             if (count == 0) // Hết giờ thì làm gì
             {
                 timer1.Stop();
@@ -332,6 +335,11 @@ namespace GUB.TracNghiemThiBangLai.WinForm
                 lblTimer.ForeColor = Color.Red;
             }
             lblTimer.Text = convert(count);
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            timerStart(); //Qua mỗi giây thì gọi lại xem host nhấn bắt đầu chưa
         }
     }
 }

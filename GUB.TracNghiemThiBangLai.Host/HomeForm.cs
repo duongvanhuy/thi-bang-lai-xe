@@ -359,7 +359,7 @@ namespace GUB.TracNghiemThiBangLai.Host
             timer1.Start();
             AppSettingEntities appSettingEntities = new AppSettingEntities()
             {
-                Key = 0,
+                Key = 1,
                 valueKey = 1
             };
             await appSettingRepository.UpdateAppSettingKey(appSettingEntities);
@@ -490,9 +490,9 @@ namespace GUB.TracNghiemThiBangLai.Host
                             dataTable.Columns.Add(col);
                         }
 
-
-                        dataTable.Rows[j].Cells[dataTable.Columns.Count - 4].Value = listResultExam[i].NumberOfCorrect;
-                        dataTable.Rows[j].Cells[dataTable.Columns.Count - 5].Value = 1;
+                        int index = dataTable.Rows.Cast<DataGridViewRow>().Where(r => r.Cells[3].Value.ToString().Equals(listCCCDMemory[j])).First().Index;
+                        dataTable.Rows[index].Cells[dataTable.Columns.Count - 4].Value = listResultExam[i].NumberOfCorrect;
+                        dataTable.Rows[index].Cells[dataTable.Columns.Count - 5].Value = 1;
                         //if (listResultExam[i].NumberOfCorrect >= 16)
                         //{
 
@@ -505,12 +505,18 @@ namespace GUB.TracNghiemThiBangLai.Host
                         //    dataTable.Rows[j].Cells[dataTable.Columns.Count - 1].Value = "Không đạt";
 
                         //}
-                        dataTable.Rows[j].Cells[dataTable.Columns.Count - 1].Value = listResultExam[i].Status;
+                        dataTable.Rows[index].Cells[dataTable.Columns.Count - 1].Value = listResultExam[i].Status;
                         count++;
                         isHeader = true;
 
                     }
                 }
+
+                //foreach(var data in dataTable.Rows)
+                //{
+
+                //    if(data.ca)
+                //}
             }
 
             // cập nhật lại số người đang thi và đã thi xong
