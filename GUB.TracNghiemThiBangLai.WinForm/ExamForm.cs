@@ -25,7 +25,7 @@ namespace GUB.TracNghiemThiBangLai.WinForm
         Computer computer;
         User user;
         int count;
-        int idComputer = 201;
+        int idComputer = 202;
 
 
         public ExamForm()

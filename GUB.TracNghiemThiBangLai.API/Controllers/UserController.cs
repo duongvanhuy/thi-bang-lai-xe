@@ -102,5 +102,21 @@ namespace GUB.TracNghiemThiBangLai.API.Controllers
                 return BadRequest(e.Message);
             }
         }
+        [HttpGet]
+        public async Task<IActionResult> SearchUser(string name)
+        {
+            try
+            {
+                // tìm kiếm user theo tên
+                var users = await _context.Set<User>().Where(x => x.FullName.Contains(name)).ToListAsync();
+
+
+                return Ok(users);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
     }
 }

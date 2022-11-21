@@ -44,8 +44,6 @@
             this.btnSearch = new System.Windows.Forms.ToolStripButton();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtMessPhone = new System.Windows.Forms.Label();
@@ -90,7 +88,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1803, 106);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Danh sách tài khoản";
+            this.label1.Text = "Danh sách thí sinh";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -170,8 +168,8 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(174, 43);
-            this.toolStripStatusLabel1.Text = "   Tổng số tài khoản:";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(158, 43);
+            this.toolStripStatusLabel1.Text = "   Tổng số thí sinh:";
             // 
             // txtCountUser
             // 
@@ -212,45 +210,11 @@
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Location = new System.Drawing.Point(0, 757);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1232, 191);
             this.panel2.TabIndex = 2;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(532, 78);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(215, 64);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Reset mật khẩu";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(950, 78);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(215, 64);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Xóa tài khoản ";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -259,11 +223,11 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Image = global::GUB.TracNghiemThiBangLai.Host.Properties.Resources._41743_mypc_add_icon;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(105, 78);
+            this.button1.Location = new System.Drawing.Point(547, 78);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(226, 64);
+            this.button1.Size = new System.Drawing.Size(184, 64);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Thêm tài khoản";
+            this.button1.Text = "Thêm mới  ";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -403,7 +367,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(568, 96);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Thông tin tài khoản";
+            this.label3.Text = "Thông tin thí sinh";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtName
@@ -453,7 +417,7 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
@@ -501,7 +465,7 @@
             this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 250;
+            this.dataGridViewTextBoxColumn4.Width = 300;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -571,8 +535,6 @@
         private Label label3;
         private TextBox txtName;
         private Label label2;
-        private Button button3;
-        private Button button2;
         private Button button1;
         private Button button5;
         private Button button4;
