@@ -1,4 +1,4 @@
-using GUB.TracNghiemThiBangLai.API.Controllers;
+//using GUB.TracNghiemThiBangLai.API.Controllers;
 /*using GUB.TracNghiemThiBangLai.Entities;*/
 using GUB.TracNghiemThiBangLai.Share.Service;
 using GUB.TracNghiemThiBangLai.Share.Controller;
