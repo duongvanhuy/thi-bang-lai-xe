@@ -26,6 +26,7 @@ namespace GUB.TracNghiemThiBangLai.Host
         String pathFileExcel = "";
         ComputerRepository computerRepository = new ComputerRepository();
         ResultExamRepository resultExamRepository = new ResultExamRepository();
+        UserRepository userRepository = new UserRepository();
         int ExamTime = 0;
 
 
@@ -118,6 +119,7 @@ namespace GUB.TracNghiemThiBangLai.Host
 
 
                     dataTable.DataSource = tbContainer;
+                    saveUserFordatabase();
                 }
 
             }
@@ -522,6 +524,52 @@ namespace GUB.TracNghiemThiBangLai.Host
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        // lấy giá trị của user sau khi import file excel
+        private User getUser()
+        {
+            try
+            {
+                var user = new User();
+                user.FullName = dataTable.Rows[dataTable.CurrentRow.Index].Cells[1].Value.ToString();
+                user.Phone = dataTable.Rows[dataTable.CurrentRow.Index].Cells[2].Value.ToString();
+                user.CCCD = dataTable.Rows[dataTable.CurrentRow.Index].Cells[3].Value.ToString();
+                user.Birthday = DateTime.Parse(dataTable.Rows[dataTable.CurrentRow.Index].Cells[4].Value.ToString());
+                user.Address = dataTable.Rows[dataTable.CurrentRow.Index].Cells[5].Value.ToString();
+                return user;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+        }
+
+        // lấy giá trị của user sau khi import file excel
+        private async void saveUserFordatabase()
+        {
+            try
+            {
+                // duyệt qua các hàng trong bảng
+                for (int i = 0; i < dataTable.Rows.Count; i++)
+                {
+                    // lấy giá trị của user
+                    var user = new User();
+                    user.FullName = dataTable.Rows[i].Cells[1].Value.ToString();
+                    user.Phone = dataTable.Rows[i].Cells[2].Value.ToString();
+                    user.CCCD = dataTable.Rows[i].Cells[3].Value.ToString();
+                    user.Birthday = DateTime.Parse(dataTable.Rows[i].Cells[4].Value.ToString());
+                    user.Address = dataTable.Rows[i].Cells[5].Value.ToString();
+                    // thêm user vào database
+                    await userRepository.AddUser(user);
+                }
+            }
+            catch (Exception ex)
+            {
+              //  MessageBox.Show(ex.Message);
+               
+            }
         }
     }
 }
