@@ -49,6 +49,35 @@ namespace GUB.TracNghiThiBangLai.EntityFrameworkCore.Migrations
                     b.ToTable("Accounts");
                 });
 
+            modelBuilder.Entity("GUB.TracNghiemThiBangLai.Entities.AppSettingEntities", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Key")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("NameKey")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("valueKey")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AppSettingEntities");
+                });
+
             modelBuilder.Entity("GUB.TracNghiemThiBangLai.Entities.Computer", b =>
                 {
                     b.Property<int>("Id")
