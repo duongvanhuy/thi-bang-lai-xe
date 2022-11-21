@@ -34,11 +34,12 @@ namespace GUB.TracNghiemThiBangLai.Share.Service
                 request.AddHeader("content-type", "application/json");
                 request.AddJsonBody(resource);
 
-               /* var jwToken = _httpContextAccessor.HttpContext.Session.GetString("AccessToken");
-                if (!string.IsNullOrEmpty(jwToken))
-                {
-                    request.AddHeader("Authorization", jwToken);
-                }*/
+                
+                /* var jwToken = _httpContextAccessor.HttpContext.Session.GetString("AccessToken");
+                 if (!string.IsNullOrEmpty(jwToken))
+                 {
+                     request.AddHeader("Authorization", jwToken);
+                 }*/
                 var response = await _client.ExecuteAsync<T>(request);
 
               /*  var dataReponse = JsonConvert.DeserializeObject<T>(response.Content);*/
@@ -59,14 +60,14 @@ namespace GUB.TracNghiemThiBangLai.Share.Service
                 var resource = JsonConvert.SerializeObject(data);
                 var requestQueryString = endPonit + GetQueryString(data);
                 var request = new RestRequest(requestQueryString, Method.Get);
-
-               /* var jwToken = _httpContextAccessor.HttpContext.Session.GetString("AccessToken");
-                if (!string.IsNullOrEmpty(jwToken))
-                {
-                    request.AddHeader("Authorization", jwToken);
-                    request.AddHeader("Authorization", $"Bearer {jwToken}");
-                }
-*/
+                
+                /* var jwToken = _httpContextAccessor.HttpContext.Session.GetString("AccessToken");
+                 if (!string.IsNullOrEmpty(jwToken))
+                 {
+                     request.AddHeader("Authorization", jwToken);
+                     request.AddHeader("Authorization", $"Bearer {jwToken}");
+                 }
+ */
                 var response = await _client.ExecuteAsync<T>(request);
 
                 return response.Data;

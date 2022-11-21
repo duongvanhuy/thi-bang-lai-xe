@@ -19,6 +19,6 @@ namespace GUB.TracNghiemThiBangLai.Entities
         /// <summary>
         /// giá trị của key
         /// </summary>
-        public string valueKey { get; set; }
+        public int valueKey { get; set; }
     }
 }

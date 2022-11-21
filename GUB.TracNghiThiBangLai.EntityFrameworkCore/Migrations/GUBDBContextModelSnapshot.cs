@@ -69,9 +69,8 @@ namespace GUB.TracNghiThiBangLai.EntityFrameworkCore.Migrations
                     b.Property<string>("NameKey")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("valueKey")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("valueKey")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

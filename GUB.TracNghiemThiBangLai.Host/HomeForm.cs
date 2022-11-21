@@ -4,6 +4,7 @@ using GemBox.Spreadsheet.WinFormsUtilities;
 using GUB.TracNghiemThiBangLai.Entities;
 using GUB.TracNghiemThiBangLai.Share.Controller;
 using GUB.TracNghiemThiBangLai.Share.Resources;
+
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,7 @@ namespace GUB.TracNghiemThiBangLai.Host
         ComputerRepository computerRepository = new ComputerRepository();
         ResultExamRepository resultExamRepository = new ResultExamRepository();
         UserRepository userRepository = new UserRepository();
+        AppSettingRepository appSettingRepository = new AppSettingRepository();
         int ExamTime = 0;
 
 
@@ -162,7 +164,7 @@ namespace GUB.TracNghiemThiBangLai.Host
             List<Computer> computers = new List<Computer>();
             computers = await computerRepository.GetComputers();
             var count = 0;
-           
+
 
             // Lấy ra HeaderText cột cuối cùng
             string headerText = dataTable.Columns[dataTable.Columns.Count - 1].HeaderText;
@@ -195,7 +197,7 @@ namespace GUB.TracNghiemThiBangLai.Host
                             {
 
                                 dataTable.Rows[i].Cells[dataTable.Columns.Count - 1].Value = computers[count].NumberCom.ToString();
-                               /* dataTable.Rows[i].Cells[dataTable.Columns.Count - 4].Value = 1;*/
+                                /* dataTable.Rows[i].Cells[dataTable.Columns.Count - 4].Value = 1;*/
                                 listCCCDMemory.Add(dataTable.Rows[i].Cells[3].Value.ToString());
 
                                 // lưu tạm danh sách người thi tương ứng với máy thi vào CSDL
@@ -229,7 +231,7 @@ namespace GUB.TracNghiemThiBangLai.Host
                 {
                     if (count < computers.Count)
                     {
-                       
+
                         // kiểm tra hàng hiện tại có khác null không
                         if (dataTable.Rows[i].Cells[0].Value != null)
                         {
@@ -351,11 +353,16 @@ namespace GUB.TracNghiemThiBangLai.Host
         }
 
         // bắt đầu bài thi
-        private void button3_Click(object sender, EventArgs e)
+        private async void button3_Click(object sender, EventArgs e)
         {
             ExamTime = AppSetting.ExamTime;
             timer1.Start();
-
+            AppSettingEntities appSettingEntities = new AppSettingEntities()
+            {
+                Key = 0,
+                valueKey = 1
+            };
+            await appSettingRepository.UpdateAppSettingKey(appSettingEntities);
             lblSoNguoiDangThi.Text = listCCCDMemory.Count.ToString();
 
 
@@ -399,7 +406,12 @@ namespace GUB.TracNghiemThiBangLai.Host
                 lblSoNguoiThiXong.Text = listCCCDMemory.Count.ToString();
                 lblSoNguoiDangThi.Text = "0";
 
-
+                AppSettingEntities appSettingEntities = new AppSettingEntities()
+                {
+                    Key = 0,
+                    valueKey = 0
+                };
+                await appSettingRepository.UpdateAppSettingKey(appSettingEntities);
 
             }
 
@@ -567,8 +579,8 @@ namespace GUB.TracNghiemThiBangLai.Host
             }
             catch (Exception ex)
             {
-              //  MessageBox.Show(ex.Message);
-               
+                //  MessageBox.Show(ex.Message);
+
             }
         }
     }
