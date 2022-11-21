@@ -91,9 +91,10 @@ namespace GUB.TracNghiemThiBangLai.Host
                     var userRow = dgvUser.SelectedRows[0].DataBoundItem as User;
                     if (userRow != null)
                     {
-                        User userDeleted  = await userRepository.DeleteUser(userRow.Id);
-                      
-                           
+                            //User userDeleted = new User();
+                        User userDeleted = await userRepository.DeleteUser(userRow.Id);
+
+                     
                         //Xóa thành công
                         if (userDeleted != null)
                         {
@@ -152,9 +153,11 @@ namespace GUB.TracNghiemThiBangLai.Host
                              MessageBoxButtons.OK);
                             Initial();
                         }
-                        else
+                        else {
                             MessageBox.Show("Reset mật khẩu không thành công", "Thông báo",
-                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                   MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                          
 
 
 
@@ -191,19 +194,21 @@ namespace GUB.TracNghiemThiBangLai.Host
                             userRow.Phone = txtPhone.Text;
                             userRow.Address = txtAddress.Text;
                             userRow.Birthday = dtpBirthday.Value;
+
                             var userUpdate = await userRepository.UpdateUser(userRow);
                             //update thành công
-                            if (userUpdate != null)
+                            if (userUpdate != null && userUpdate.Id != null)
                             {
                                 MessageBox.Show("update user thành công", "Thông báo",
                                  MessageBoxButtons.OK);
                                 Initial();
                             }
                             else
+                            {
                                 MessageBox.Show("Sửa thông tin không thành công", "Thông báo",
                                      MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-
+                            }
+   
                         }
                     }
                     else
@@ -235,8 +240,11 @@ namespace GUB.TracNghiemThiBangLai.Host
                         Initial();
                     }
                     else
+                    {
                         MessageBox.Show("Thêm mới không thành công", "Thông báo",
-                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                       
 
                 }
 

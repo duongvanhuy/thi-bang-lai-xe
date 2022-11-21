@@ -24,7 +24,7 @@ namespace GUB.TracNghiemThiBangLai.WinForm
         User user;
         int count;
         int idComputer = 201;
-       
+
 
         public ExamForm()
         {
@@ -34,6 +34,13 @@ namespace GUB.TracNghiemThiBangLai.WinForm
             userRepository = new UserRepository();
             Initial();
             
+        }
+
+
+        //Fake realtime
+        public void timerStart()
+        {
+
         }
 
         public async void Initial()
