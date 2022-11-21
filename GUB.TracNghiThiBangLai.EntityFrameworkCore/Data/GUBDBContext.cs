@@ -21,5 +21,7 @@ namespace GUB.TracNghiThiBangLai.EntityFrameworkCore.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<ResultExam> ResultExams { get; set; }
+
+        public DbSet<AppSettingEntities> AppSettingEntities { get; set; }
     }
 }
