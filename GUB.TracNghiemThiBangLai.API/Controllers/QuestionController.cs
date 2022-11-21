@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GUB.TracNghiemThiBangLai.API.Controllers
 {
-    [EnableCors("MyPolicy")]
+    //[EnableCors("MyPolicy")]
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class QuestionController : ControllerBase
@@ -17,14 +17,16 @@ namespace GUB.TracNghiemThiBangLai.API.Controllers
         {
             _context = context;
         }
-        [DisableCors]
+        //[DisableCors]
         [HttpGet]
-        
+
         public async Task<IActionResult> GetAllQuestion()
         {
             try
             {
-                var questions = await _context.Set<Question>().ToListAsync();
+                // lấy ra 25 câu hỏi ngẫu nhiên
+                var questions = await _context.Questions.OrderBy(x => Guid.NewGuid()).Take(25).ToListAsync();
+                // var questions = await _context.Set<Question>().ToListAsync();
                 return Ok(questions);
             }
             catch (Exception e)
