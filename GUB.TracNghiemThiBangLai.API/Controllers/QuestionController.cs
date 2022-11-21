@@ -19,12 +19,14 @@ namespace GUB.TracNghiemThiBangLai.API.Controllers
         }
         //[DisableCors]
         [HttpGet]
-        
+
         public async Task<IActionResult> GetAllQuestion()
         {
             try
             {
-                var questions = await _context.Set<Question>().ToListAsync();
+                // lấy ra 25 câu hỏi ngẫu nhiên
+                var questions = await _context.Questions.OrderBy(x => Guid.NewGuid()).Take(25).ToListAsync();
+                // var questions = await _context.Set<Question>().ToListAsync();
                 return Ok(questions);
             }
             catch (Exception e)

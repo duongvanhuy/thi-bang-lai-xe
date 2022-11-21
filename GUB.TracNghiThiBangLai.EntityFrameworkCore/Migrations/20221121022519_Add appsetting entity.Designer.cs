@@ -4,6 +4,7 @@ using GUB.TracNghiThiBangLai.EntityFrameworkCore.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GUB.TracNghiThiBangLai.EntityFrameworkCore.Migrations
 {
     [DbContext(typeof(GUBDBContext))]
-    partial class GUBDBContextModelSnapshot : ModelSnapshot
+    [Migration("20221121022519_Add appsetting entity")]
+    partial class Addappsettingentity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -67,10 +69,8 @@ namespace GUB.TracNghiThiBangLai.EntityFrameworkCore.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("NameKey")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("valueKey")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

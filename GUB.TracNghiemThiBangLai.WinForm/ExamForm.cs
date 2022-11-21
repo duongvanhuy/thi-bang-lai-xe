@@ -19,6 +19,8 @@ namespace GUB.TracNghiemThiBangLai.WinForm
         QuestionRepository questionRepository;
         ComputerRepository computerRepository;
         UserRepository userRepository;
+        AppSettingRepository appSettingRepository;
+        AppSettingEntities appSettingEntities;
         List<Question> questionList;
         Computer computer;
         User user;
@@ -32,21 +34,26 @@ namespace GUB.TracNghiemThiBangLai.WinForm
             questionRepository = new QuestionRepository();
             computerRepository = new ComputerRepository();
             userRepository = new UserRepository();
-            Initial();
+            appSettingRepository = new AppSettingRepository();
             
+
         }
 
 
         //Fake realtime
-        public void timerStart()
+        public async void timerStart()
         {
-
+            appSettingEntities = await appSettingRepository.GetAppSettingKey(0);
+            if (appSettingEntities.valueKey == 1)
+            {
+                Initial();
+            }
         }
 
         public async void Initial()
         {
-            
-            questionList = await questionRepository.GetQuestions() ;
+
+            questionList = await questionRepository.GetQuestions();
             addListFlpDapAn(questionList);
 
             //Hiển thị câu hỏi đầu tiên của list
@@ -72,21 +79,21 @@ namespace GUB.TracNghiemThiBangLai.WinForm
             lblDiaChi.Text = user.Address;
         }
 
-        
+
 
         //Render 1 list flow đáp án
-        public void addListFlpDapAn(List<Question> listQuestion  )
+        public void addListFlpDapAn(List<Question> listQuestion)
         {
             //foreach (Question question in listQuestion)
             //{
             //    flpDapAn.Controls.Add(createPanelInFlowPanel(question));
             //}
-            for(var i = 0; i < listQuestion.Count; i ++)
+            for (var i = 0; i < listQuestion.Count; i++)
             {
                 flpDapAn.Controls.Add(createPanelInFlowPanel(listQuestion[i], i + 1)); // Số thứ tự câu hỏi
             }
         }
-        
+
 
         //Tạo ra một flow đáp án
         private FlowLayoutPanel createPanelInFlowPanel(Question question, int sttQuestion)
@@ -106,21 +113,24 @@ namespace GUB.TracNghiemThiBangLai.WinForm
             flowLayoutPanel.Controls.Add(label);
             //for (var i = 1; i <= 4; i ++)
             //{
-                
+
             //}
             for (int i = 1; i <= 4; i++)
             {
                 var answer = "";
-                if(i == 1)
+                if (i == 1)
                 {
                     answer = "A";
-                } else if(i == 2)
+                }
+                else if (i == 2)
                 {
-                   answer = "B";
-                } else if(i == 3)
+                    answer = "B";
+                }
+                else if (i == 3)
                 {
                     answer = "C";
-                } else if(i == 4)
+                }
+                else if (i == 4)
                 {
                     answer = "D";
                 }
@@ -140,7 +150,7 @@ namespace GUB.TracNghiemThiBangLai.WinForm
 
             }
             flowLayoutPanel.Name = "flowLayoutPanel" + question.Id.ToString();//Đặt tên theo số câu hỏi
-            flowLayoutPanel.Tag = question.Id;  
+            flowLayoutPanel.Tag = question.Id;
             flowLayoutPanel.Size = new System.Drawing.Size(150, 60);
             flowLayoutPanel.Click += new EventHandler(flowLayoutPanel_Clicked);
             return flowLayoutPanel;
@@ -150,9 +160,9 @@ namespace GUB.TracNghiemThiBangLai.WinForm
         //Đỗ dữ liệu câu hỏi
         private void renderQuestion(Question question)
         {
-            lblCauHoi.Text= question.Content;
+            lblCauHoi.Text = question.Content;
 
-            if(question.Image.Length >0 )
+            if (question.Image.Length > 0)
             {
                 ptbHinhAnhCauHoi.Image = LoadImage(question.Image);
                 lblCauTraLoi.Dock = DockStyle.Bottom;
@@ -162,23 +172,23 @@ namespace GUB.TracNghiemThiBangLai.WinForm
                 ptbHinhAnhCauHoi.Image = null;
                 lblCauTraLoi.Dock = DockStyle.Fill;
             }
-            
+
             if (question.AnswerD.Length == 0)
             {
                 lblCauTraLoi.Text = string.Format("A. {0} \nB. {1} \nC. {2} ", question.AnswerA, question.AnswerB, question.AnswerC);
             }
             else
             {
-                lblCauTraLoi.Text= string.Format("A. {0} \nB. {1} \nC. {2} \nD. {3}", question.AnswerA, question.AnswerB, question.AnswerC, question.AnswerD);
+                lblCauTraLoi.Text = string.Format("A. {0} \nB. {1} \nC. {2} \nD. {3}", question.AnswerA, question.AnswerB, question.AnswerC, question.AnswerD);
             }
-            
-            
+
+
         }
 
         //Convert Base64 to Image 
         public Image LoadImage(string base64)
         {
-            
+
             var stringBase64 = base64.Split("data:image/jpeg;base64,")[1];
             //data:image/gif;base64,
             //this image is a single pixel (black)
@@ -224,9 +234,9 @@ namespace GUB.TracNghiemThiBangLai.WinForm
         private async void radioButton_CheckedChanged(object sender, EventArgs e)
         {
             var radioButton = (RadioButton)sender;
-            if(radioButton.Checked)
+            if (radioButton.Checked)
             {
-                Question question = await questionRepository.GetByQuestion(Convert.ToInt32( radioButton.Tag));
+                Question question = await questionRepository.GetByQuestion(Convert.ToInt32(radioButton.Tag));
                 renderQuestion(question);
                 radioButton.Parent.BackColor = Color.Yellow;
             }
@@ -240,11 +250,12 @@ namespace GUB.TracNghiemThiBangLai.WinForm
             {
                 confirm = MessageBox.Show("Bạn có chắc là muốn kết thúc không?", "Chú ý",
                     MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            } else // Nếu thời gian đã hết thì confirm mặc định là OK 
+            }
+            else // Nếu thời gian đã hết thì confirm mặc định là OK 
             {
                 confirm = DialogResult.OK;
             }
-            
+
             if (confirm == DialogResult.OK)
             {
                 for (var i = 0; i < flpDapAn.Controls.Count; i++)
@@ -309,12 +320,14 @@ namespace GUB.TracNghiemThiBangLai.WinForm
         private void timer1_Tick(object sender, EventArgs e)
         {
             count--;
+            timerStart(); //Qua mỗi giây thì gọi lại xem host nhấn bắt đầu chưa
             if (count == 0) // Hết giờ thì làm gì
             {
                 timer1.Stop();
                 MessageBox.Show("Thời gian làm bài đã hết!");
                 btnKetThuc_Click(sender, e);
-            } else if (count == 10) // Gần hết giờ thì làm gì
+            }
+            else if (count == 10) // Gần hết giờ thì làm gì
             {
                 lblTimer.ForeColor = Color.Red;
             }
